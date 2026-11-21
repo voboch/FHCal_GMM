@@ -1,0 +1,3467 @@
+{
+  "baseline_sha256": "aa88654eb8ca0ef3116bc8d4e0c74b4992d61dee3415dd6eda45c0f7a4099e4b",
+  "replay_sha256": "25e7f681c96cbda7ef38686eec4203136dfb8ca0da4255a51dbda34265addd55",
+  "npz_sha256": "3104573217991bd1b5be022f6cca168da1c88a9daec8b9d283539c47ee0ae130",
+  "geometry_sha256": "3f577faabdfef84e815760830ce4e716d7894acc26fa90f708127910a91dfdba",
+  "k": 4,
+  "iteration_limits": [
+    200,
+    800
+  ],
+  "section_fraction_threshold": 0.01,
+  "n_sections": 438,
+  "rows": [
+    {
+      "event_index": 64117,
+      "positive_sections": 23,
+      "sections_at_fraction_threshold": 21,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2155745103770974,
+            0.21714400025062036
+          ],
+          "loss": [
+            0.07452700007613532,
+            0.07441151029257172
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.24249899613577203,
+            0.21452895086125384
+          ],
+          "loss": [
+            0.07377451670919,
+            0.07299650696293195
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 76354,
+      "positive_sections": 9,
+      "sections_at_fraction_threshold": 9,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.02592407900966781,
+            0.02592407900966781
+          ],
+          "loss": [
+            0.0046933180496654065,
+            0.0046933180496654065
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.08235363795218723,
+            0.08235363795218723
+          ],
+          "loss": [
+            0.01559676593104125,
+            0.01559676593104125
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 64582,
+      "positive_sections": 25,
+      "sections_at_fraction_threshold": 22,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2494336481774497,
+            0.24940380024908806
+          ],
+          "loss": [
+            0.0749361965963879,
+            0.07493491056963897
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.28431201717352833,
+            0.2855266237908487
+          ],
+          "loss": [
+            0.09868641555149214,
+            0.09835590221515497
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 79387,
+      "positive_sections": 30,
+      "sections_at_fraction_threshold": 24,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.25287401347429306,
+            0.25298114344663
+          ],
+          "loss": [
+            0.11678424883213677,
+            0.1167696528079074
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.25144274313635145,
+            0.25144274313635145
+          ],
+          "loss": [
+            0.11646415631564908,
+            0.11646415631564908
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 105718,
+      "positive_sections": 5,
+      "sections_at_fraction_threshold": 5,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.0031988152193584748,
+            0.0031988152193584748
+          ],
+          "loss": [
+            0.0016013357052639338,
+            0.0016013357052639338
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            8.107694270872745e-05,
+            8.107694270872745e-05
+          ],
+          "loss": [
+            7.728548103663605e-08,
+            7.728548103663605e-08
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 96915,
+      "positive_sections": 30,
+      "sections_at_fraction_threshold": 18,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1213579448412065,
+            0.12138587163291334
+          ],
+          "loss": [
+            0.0497972045027198,
+            0.04979483920775233
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12231763649403292,
+            0.11344956938937197
+          ],
+          "loss": [
+            0.05692406662376842,
+            0.04962868869890062
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 73569,
+      "positive_sections": 23,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.14171608203320585,
+            0.14168667979966668
+          ],
+          "loss": [
+            0.06538529617198166,
+            0.06538333326589775
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16540632614571985,
+            0.166595885761629
+          ],
+          "loss": [
+            0.07346823622886856,
+            0.07192964690242071
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 35157,
+      "positive_sections": 22,
+      "sections_at_fraction_threshold": 17,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1545814811330642,
+            0.15454888818370482
+          ],
+          "loss": [
+            0.067519053908426,
+            0.06748378203772724
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.17216903641203907,
+            0.17241008663991933
+          ],
+          "loss": [
+            0.07185001401199592,
+            0.07183834011389907
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 179099,
+      "positive_sections": 27,
+      "sections_at_fraction_threshold": 21,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2082487142307269,
+            0.20833424153723162
+          ],
+          "loss": [
+            0.06833353360720819,
+            0.06832944479707218
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.20803407449057365,
+            0.20803407449057365
+          ],
+          "loss": [
+            0.06796234381794189,
+            0.06796234381794189
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 128879,
+      "positive_sections": 30,
+      "sections_at_fraction_threshold": 18,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.23975029022192573,
+            0.23975029022192573
+          ],
+          "loss": [
+            0.11423797523840294,
+            0.11423797523840294
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2264218768505617,
+            0.22632007601481882
+          ],
+          "loss": [
+            0.10876739504386818,
+            0.10876251580327183
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 119999,
+      "positive_sections": 26,
+      "sections_at_fraction_threshold": 20,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.15239674855687885,
+            0.15232317427593467
+          ],
+          "loss": [
+            0.060533425371643704,
+            0.06052771043442215
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.15165784109869684,
+            0.14929442863264783
+          ],
+          "loss": [
+            0.059207964720867576,
+            0.0589509916803183
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 43896,
+      "positive_sections": 17,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1712908361479658,
+            0.1712908361479658
+          ],
+          "loss": [
+            0.0761654870690477,
+            0.0761654870690477
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16459621490908335,
+            0.1649143503576872
+          ],
+          "loss": [
+            0.08033723705700369,
+            0.08033620297499804
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 115991,
+      "positive_sections": 10,
+      "sections_at_fraction_threshold": 9,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1276516582976585,
+            0.1275657652662747
+          ],
+          "loss": [
+            0.05165953502388994,
+            0.051592080944828256
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12781894949214556,
+            0.12781894949214556
+          ],
+          "loss": [
+            0.05069459316240701,
+            0.05069459316240701
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 82788,
+      "positive_sections": 6,
+      "sections_at_fraction_threshold": 6,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.03638878420489511,
+            0.0030892556152210164
+          ],
+          "loss": [
+            0.010412439778247828,
+            0.0015461700741511643
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.035904199514108705,
+            0.035904199514108705
+          ],
+          "loss": [
+            0.008998270108916007,
+            0.008998270108916007
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 133216,
+      "positive_sections": 14,
+      "sections_at_fraction_threshold": 10,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.03563142911474578,
+            0.03563142911474578
+          ],
+          "loss": [
+            0.01773521712049653,
+            0.01773521712049653
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.0359405185105883,
+            0.0359405185105883
+          ],
+          "loss": [
+            0.01763315933915043,
+            0.01763315933915043
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 157626,
+      "positive_sections": 16,
+      "sections_at_fraction_threshold": 14,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.08154990818849701,
+            0.07091972158467795
+          ],
+          "loss": [
+            0.030384689048100256,
+            0.028933438170479237
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.0808020535845414,
+            0.08163153955447619
+          ],
+          "loss": [
+            0.030571731187764906,
+            0.0303398931248447
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 10660,
+      "positive_sections": 25,
+      "sections_at_fraction_threshold": 20,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.24715973900526003,
+            0.2485922965746604
+          ],
+          "loss": [
+            0.12489102403387575,
+            0.12333929413336321
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.24713855517919953,
+            0.2475331859802604
+          ],
+          "loss": [
+            0.12435229994846171,
+            0.12433210845886378
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 166867,
+      "positive_sections": 6,
+      "sections_at_fraction_threshold": 6,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.0018177584055024145,
+            0.0018177584055024145
+          ],
+          "loss": [
+            0.0004927991424380466,
+            0.0004927991424380466
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            5.438746621847204e-05,
+            5.438746621847204e-05
+          ],
+          "loss": [
+            5.629841278951213e-08,
+            5.629841278951213e-08
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 16014,
+      "positive_sections": 18,
+      "sections_at_fraction_threshold": 11,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.09942397040390388,
+            0.09942397040390388
+          ],
+          "loss": [
+            0.044128348411866476,
+            0.044128348411866476
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.09971755644779792,
+            0.09971229953840204
+          ],
+          "loss": [
+            0.043362799621805656,
+            0.04336279316125701
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 8409,
+      "positive_sections": 19,
+      "sections_at_fraction_threshold": 13,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.09245471932248166,
+            0.09177421644615456
+          ],
+          "loss": [
+            0.03609108191089373,
+            0.036077329918024134
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.10035426307332788,
+            0.10046586062606205
+          ],
+          "loss": [
+            0.036896994695483576,
+            0.03688541210159245
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 128125,
+      "positive_sections": 3,
+      "sections_at_fraction_threshold": 3,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.005392366048345366,
+            0.005392366048345366
+          ],
+          "loss": [
+            0.0026998198273487355,
+            0.0026998198273487355
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            7.4911649984096885e-06,
+            7.4911649984096885e-06
+          ],
+          "loss": [
+            6.146886051875752e-08,
+            6.146886051875752e-08
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 165820,
+      "positive_sections": 22,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.0826624137279236,
+            0.08267183601738744
+          ],
+          "loss": [
+            0.02304224475296215,
+            0.023039330514602968
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12479440073668555,
+            0.12479440073668555
+          ],
+          "loss": [
+            0.04067078261172341,
+            0.04067078261172341
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 5157,
+      "positive_sections": 19,
+      "sections_at_fraction_threshold": 17,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.11360604633532573,
+            0.11368148490785585
+          ],
+          "loss": [
+            0.0450305855771279,
+            0.04502512979351508
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.11353453669568907,
+            0.11355401373595593
+          ],
+          "loss": [
+            0.046568877924591405,
+            0.04656887480546933
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 68233,
+      "positive_sections": 19,
+      "sections_at_fraction_threshold": 15,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.07501695176613488,
+            0.07516335421646181
+          ],
+          "loss": [
+            0.015623516034947023,
+            0.015621102486388429
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.07642310079897105,
+            0.07642310079897105
+          ],
+          "loss": [
+            0.01626137840832119,
+            0.01626137840832119
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 111349,
+      "positive_sections": 11,
+      "sections_at_fraction_threshold": 8,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.022540390947969495,
+            0.022568433780898085
+          ],
+          "loss": [
+            0.009223753595676702,
+            0.00912518114518216
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.022835998406018777,
+            0.022835998406018777
+          ],
+          "loss": [
+            0.007710173036770997,
+            0.007710173036770997
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 79472,
+      "positive_sections": 34,
+      "sections_at_fraction_threshold": 27,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.280250034311683,
+            0.2803709540758469
+          ],
+          "loss": [
+            0.1328597443694219,
+            0.132801084064439
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2804818694187246,
+            0.28014593809757027
+          ],
+          "loss": [
+            0.1327734183314753,
+            0.1327151195338845
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 66181,
+      "positive_sections": 22,
+      "sections_at_fraction_threshold": 18,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.13821450639937716,
+            0.11398011467317892
+          ],
+          "loss": [
+            0.04645896385471377,
+            0.034753014851170265
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.1312349306409655,
+            0.13549879763178688
+          ],
+          "loss": [
+            0.0518424553102166,
+            0.051051311252460166
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 121278,
+      "positive_sections": 31,
+      "sections_at_fraction_threshold": 21,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.21568383998133583,
+            0.21573712840328746
+          ],
+          "loss": [
+            0.0793675857796686,
+            0.07936535574254731
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2164685868361105,
+            0.21641856921273533
+          ],
+          "loss": [
+            0.07959249073605054,
+            0.07959242388113062
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 30140,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.16989310658698958,
+            0.17028940090088426
+          ],
+          "loss": [
+            0.07469281876091473,
+            0.07391752828511511
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16642094528033496,
+            0.16597004765628112
+          ],
+          "loss": [
+            0.07082845309915894,
+            0.07068045697269516
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 56235,
+      "positive_sections": 25,
+      "sections_at_fraction_threshold": 17,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.16388641711427498,
+            0.16363201812992187
+          ],
+          "loss": [
+            0.0738732613436059,
+            0.07386254607150491
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16230343511524065,
+            0.16233043800843772
+          ],
+          "loss": [
+            0.0740273290113341,
+            0.07402620979954326
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 49339,
+      "positive_sections": 11,
+      "sections_at_fraction_threshold": 11,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.21789416309343507,
+            0.21789416309343507
+          ],
+          "loss": [
+            0.09832881804313466,
+            0.09832881804313466
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2700212572908697,
+            0.2700212572908697
+          ],
+          "loss": [
+            0.09845289760634308,
+            0.09845289760634308
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 152313,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 21,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.21027100231342943,
+            0.21027100231342943
+          ],
+          "loss": [
+            0.06442367496606048,
+            0.06442367496606048
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.20803027766189228,
+            0.20792844011869016
+          ],
+          "loss": [
+            0.06323596361727296,
+            0.06323566957668267
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 166446,
+      "positive_sections": 19,
+      "sections_at_fraction_threshold": 15,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.12838622496091623,
+            0.12838622496091623
+          ],
+          "loss": [
+            0.056082116313351936,
+            0.056082116313351936
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.13476437312931902,
+            0.13476437312931902
+          ],
+          "loss": [
+            0.061324690078382434,
+            0.061324690078382434
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 56044,
+      "positive_sections": 20,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.12770252703446594,
+            0.12770252703446594
+          ],
+          "loss": [
+            0.06285436596770275,
+            0.06285436596770275
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.1276524524146166,
+            0.12768508909880025
+          ],
+          "loss": [
+            0.06190008354944022,
+            0.061899908529602976
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 133433,
+      "positive_sections": 19,
+      "sections_at_fraction_threshold": 14,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1298917799402161,
+            0.1298917799402161
+          ],
+          "loss": [
+            0.045702928688374854,
+            0.045702928688374854
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12855358728413205,
+            0.12805007911679012
+          ],
+          "loss": [
+            0.05008077449037421,
+            0.050049837274232706
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 150876,
+      "positive_sections": 7,
+      "sections_at_fraction_threshold": 7,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.047766883155620055,
+            0.047766883155620055
+          ],
+          "loss": [
+            0.025954267900166094,
+            0.025954267900166094
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.04777539238372462,
+            0.04777539238372462
+          ],
+          "loss": [
+            0.0241800985060564,
+            0.0241800985060564
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 136746,
+      "positive_sections": 30,
+      "sections_at_fraction_threshold": 24,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.21984340644175535,
+            0.21977375756352402
+          ],
+          "loss": [
+            0.10781405501071546,
+            0.10781394271567894
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.21647027776037067,
+            0.21627718309313435
+          ],
+          "loss": [
+            0.11017723829644395,
+            0.1101642556576182
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 140137,
+      "positive_sections": 27,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.20905669549565467,
+            0.20905669549565467
+          ],
+          "loss": [
+            0.08051408800604501,
+            0.08051408800604501
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.20947291170663618,
+            0.20947291170663618
+          ],
+          "loss": [
+            0.08056747179871317,
+            0.08056747179871317
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 58106,
+      "positive_sections": 15,
+      "sections_at_fraction_threshold": 14,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.16981920486546023,
+            0.16986386367501632
+          ],
+          "loss": [
+            0.07582532196605879,
+            0.07581476752202287
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.15456615071342944,
+            0.15456615071342944
+          ],
+          "loss": [
+            0.07341217280198978,
+            0.07341217280198978
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 77886,
+      "positive_sections": 29,
+      "sections_at_fraction_threshold": 17,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.20488617275945853,
+            0.2049012587518797
+          ],
+          "loss": [
+            0.08658233889708904,
+            0.08657995784026963
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.20503321325887416,
+            0.20487433466595856
+          ],
+          "loss": [
+            0.08658584630997129,
+            0.08658443231065789
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 164985,
+      "positive_sections": 26,
+      "sections_at_fraction_threshold": 11,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.10258095220633126,
+            0.08542093810818889
+          ],
+          "loss": [
+            0.03750015725190284,
+            0.03574481543917324
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.09245651909336786,
+            0.09282837484688451
+          ],
+          "loss": [
+            0.033720747085401084,
+            0.03362589679457126
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 75535,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 17,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.22190112740831597,
+            0.22190112740831597
+          ],
+          "loss": [
+            0.1165983962859121,
+            0.1165983962859121
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.22209326337639257,
+            0.22209326337639257
+          ],
+          "loss": [
+            0.11632148884420745,
+            0.11632148884420745
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 164688,
+      "positive_sections": 11,
+      "sections_at_fraction_threshold": 8,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.0641837223669718,
+            0.06418336747038364
+          ],
+          "loss": [
+            0.03262827074636087,
+            0.03262764670089079
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.051158901764366674,
+            0.05118059431735078
+          ],
+          "loss": [
+            0.023269155182109053,
+            0.023210835357273318
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 98008,
+      "positive_sections": 21,
+      "sections_at_fraction_threshold": 13,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.10428222716153432,
+            0.10443532717266552
+          ],
+          "loss": [
+            0.04384349993828098,
+            0.04375149598022136
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.13233695755021235,
+            0.13308326587398076
+          ],
+          "loss": [
+            0.061713715050143995,
+            0.061621968962255344
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 141349,
+      "positive_sections": 33,
+      "sections_at_fraction_threshold": 24,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2847294555492458,
+            0.2683446212266064
+          ],
+          "loss": [
+            0.12006626116825446,
+            0.10360620233177556
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2818943400656295,
+            0.2816227238071316
+          ],
+          "loss": [
+            0.11836151314867224,
+            0.11749061460868662
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 78511,
+      "positive_sections": 14,
+      "sections_at_fraction_threshold": 13,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.06294801319292555,
+            0.06294801319292555
+          ],
+          "loss": [
+            0.01775396973759656,
+            0.01775396973759656
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.0732624555882953,
+            0.06283062884872515
+          ],
+          "loss": [
+            0.019038184078846887,
+            0.017442878821737517
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 108514,
+      "positive_sections": 31,
+      "sections_at_fraction_threshold": 21,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2689224665954095,
+            0.26988877343210305
+          ],
+          "loss": [
+            0.12114959654174277,
+            0.12111255444255786
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2693682542595256,
+            0.27010672527380936
+          ],
+          "loss": [
+            0.1211481320172746,
+            0.12110287644823009
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 110100,
+      "positive_sections": 22,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.18618200443276403,
+            0.18557453338871394
+          ],
+          "loss": [
+            0.08749051205884084,
+            0.08747021058756758
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2344733229406108,
+            0.18655090506526753
+          ],
+          "loss": [
+            0.10714509103527566,
+            0.08720530418260714
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 58581,
+      "positive_sections": 27,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.11952530447251866,
+            0.12416247345102897
+          ],
+          "loss": [
+            0.04494932196870654,
+            0.04409995897239939
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12293047623672557,
+            0.1182309476933548
+          ],
+          "loss": [
+            0.04707552446247169,
+            0.045705414387561503
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 58968,
+      "positive_sections": 17,
+      "sections_at_fraction_threshold": 10,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.09852057017074325,
+            0.0975634800688314
+          ],
+          "loss": [
+            0.0453023343160099,
+            0.044989666385636985
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.10437064571847168,
+            0.10437064571847168
+          ],
+          "loss": [
+            0.04503594808534105,
+            0.04503594808534105
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 28379,
+      "positive_sections": 34,
+      "sections_at_fraction_threshold": 22,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.18378290145302162,
+            0.183545609500635
+          ],
+          "loss": [
+            0.08784681823315217,
+            0.08784224812358557
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.19094087800839582,
+            0.19009257986935837
+          ],
+          "loss": [
+            0.09325504609366733,
+            0.09322255970321071
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 10904,
+      "positive_sections": 15,
+      "sections_at_fraction_threshold": 10,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.06042454066561151,
+            0.06042454066561151
+          ],
+          "loss": [
+            0.008088476555061324,
+            0.008088476555061324
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.06056914554285176,
+            0.06056914554285176
+          ],
+          "loss": [
+            0.007112792196781497,
+            0.007112792196781497
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 174524,
+      "positive_sections": 31,
+      "sections_at_fraction_threshold": 23,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.27137475621489227,
+            0.2684486567881631
+          ],
+          "loss": [
+            0.11018152158358095,
+            0.10742552716165325
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2769134825695686,
+            0.27692862375051647
+          ],
+          "loss": [
+            0.1263545808701677,
+            0.1263543186907899
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 61259,
+      "positive_sections": 23,
+      "sections_at_fraction_threshold": 20,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2123198927280906,
+            0.2123314162377511
+          ],
+          "loss": [
+            0.1037826290073449,
+            0.10377803809748096
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.21422458490325413,
+            0.21391909425181582
+          ],
+          "loss": [
+            0.10299868889178154,
+            0.10298753458830641
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 166301,
+      "positive_sections": 10,
+      "sections_at_fraction_threshold": 9,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.08117264434738708,
+            0.08030957829809325
+          ],
+          "loss": [
+            0.024968855652072214,
+            0.024799868170595228
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.0801146139118909,
+            0.0801146139118909
+          ],
+          "loss": [
+            0.024032671827329252,
+            0.024032671827329252
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 92281,
+      "positive_sections": 16,
+      "sections_at_fraction_threshold": 12,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.08796848149798152,
+            0.08783547384806781
+          ],
+          "loss": [
+            0.041716864640900936,
+            0.04167598063870443
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.09016577021183544,
+            0.09016577021183544
+          ],
+          "loss": [
+            0.04287148286769756,
+            0.04287148286769756
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 178879,
+      "positive_sections": 32,
+      "sections_at_fraction_threshold": 20,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.19599217033556549,
+            0.2006379005445833
+          ],
+          "loss": [
+            0.0641359089991613,
+            0.06331309598069056
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.17006368398000474,
+            0.17018746912577062
+          ],
+          "loss": [
+            0.05336914368321857,
+            0.053368889506084385
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 57275,
+      "positive_sections": 21,
+      "sections_at_fraction_threshold": 18,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.17188913621327662,
+            0.17208965750425873
+          ],
+          "loss": [
+            0.07441152838915804,
+            0.07441076843088745
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.20401293755041267,
+            0.20401293755041267
+          ],
+          "loss": [
+            0.08900819241280948,
+            0.08900819241280948
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 127569,
+      "positive_sections": 26,
+      "sections_at_fraction_threshold": 20,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.23842508556913816,
+            0.23837913644571396
+          ],
+          "loss": [
+            0.10217752367775608,
+            0.10217219371375592
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.23986463630988583,
+            0.23841824877662196
+          ],
+          "loss": [
+            0.10399212655276861,
+            0.10384176249209076
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 35929,
+      "positive_sections": 17,
+      "sections_at_fraction_threshold": 14,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.05671585301123792,
+            0.05672783970309808
+          ],
+          "loss": [
+            0.024228525210471724,
+            0.02422803996210962
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.0639962394468476,
+            0.060578834212957795
+          ],
+          "loss": [
+            0.0284393277994721,
+            0.02810956059337724
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 152369,
+      "positive_sections": 21,
+      "sections_at_fraction_threshold": 15,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.13489664256679612,
+            0.13489664256679612
+          ],
+          "loss": [
+            0.06418817802695068,
+            0.06418817802695068
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.13488913004795614,
+            0.135297048848313
+          ],
+          "loss": [
+            0.0616347133610661,
+            0.06163224269968074
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 160761,
+      "positive_sections": 15,
+      "sections_at_fraction_threshold": 9,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.02926816645590467,
+            0.02926816645590467
+          ],
+          "loss": [
+            0.009103171635909976,
+            0.009103171635909976
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.03963931178796911,
+            0.03963931178796911
+          ],
+          "loss": [
+            0.010147482419698222,
+            0.010147482419698222
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 9525,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 18,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.19776570343963104,
+            0.1977778750707815
+          ],
+          "loss": [
+            0.08596924532609217,
+            0.0859691336605355
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.18116295902640905,
+            0.179432404453111
+          ],
+          "loss": [
+            0.08591813067530667,
+            0.08552880331026377
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 125928,
+      "positive_sections": 39,
+      "sections_at_fraction_threshold": 24,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.21391970501090335,
+            0.21387158131064515
+          ],
+          "loss": [
+            0.09009339475000712,
+            0.09003525979640987
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.20858160911678914,
+            0.21264215661850655
+          ],
+          "loss": [
+            0.09028607264853256,
+            0.08982929905778447
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 7596,
+      "positive_sections": 21,
+      "sections_at_fraction_threshold": 13,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.07155641780365833,
+            0.07155641780365833
+          ],
+          "loss": [
+            0.02925040674228729,
+            0.02925040674228729
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.07124115442011357,
+            0.07209430413927824
+          ],
+          "loss": [
+            0.029228379363827616,
+            0.02918748889568921
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 95478,
+      "positive_sections": 28,
+      "sections_at_fraction_threshold": 18,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.15602387824264882,
+            0.15604879679958888
+          ],
+          "loss": [
+            0.06545965458349393,
+            0.06545799232955454
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.145067577584296,
+            0.14486446788164037
+          ],
+          "loss": [
+            0.06881052559031306,
+            0.06812337912377632
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 88295,
+      "positive_sections": 19,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.09624049246138515,
+            0.09583729350806035
+          ],
+          "loss": [
+            0.039226300857375516,
+            0.03919379092846757
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12721106796072018,
+            0.12457797157454717
+          ],
+          "loss": [
+            0.05796837705296928,
+            0.05753520465104233
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 80624,
+      "positive_sections": 23,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2584553739708797,
+            0.25805876761257707
+          ],
+          "loss": [
+            0.11543360760690234,
+            0.11541759120843345
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.23917476765041445,
+            0.16989702877834933
+          ],
+          "loss": [
+            0.10461217228295068,
+            0.07900377541369136
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 103762,
+      "positive_sections": 27,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.19693662073324714,
+            0.1968688663779634
+          ],
+          "loss": [
+            0.08168252950084558,
+            0.08168120919296167
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.1984384231539229,
+            0.1984384231539229
+          ],
+          "loss": [
+            0.08155735589963328,
+            0.08155735589963328
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 59974,
+      "positive_sections": 27,
+      "sections_at_fraction_threshold": 21,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.22263493850429203,
+            0.22263493850429203
+          ],
+          "loss": [
+            0.0844776790761637,
+            0.0844776790761637
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2220561997054784,
+            0.2220561997054784
+          ],
+          "loss": [
+            0.0842185465208843,
+            0.0842185465208843
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 2307,
+      "positive_sections": 15,
+      "sections_at_fraction_threshold": 14,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.13088854402933364,
+            0.13088854402933364
+          ],
+          "loss": [
+            0.052077347718855874,
+            0.052077347718855874
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12959515572436864,
+            0.12968258594523463
+          ],
+          "loss": [
+            0.05115184626853822,
+            0.051151796411729775
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 170684,
+      "positive_sections": 25,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1902729529063228,
+            0.19037220889871184
+          ],
+          "loss": [
+            0.07944667833581202,
+            0.0794456797834008
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.18873730223471033,
+            0.18908259730899152
+          ],
+          "loss": [
+            0.07953161647672106,
+            0.07952707398038557
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 28801,
+      "positive_sections": 22,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1676389969055246,
+            0.15455812263591598
+          ],
+          "loss": [
+            0.05788071090033317,
+            0.05618797624551557
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16990491727193038,
+            0.17104362205703066
+          ],
+          "loss": [
+            0.0592296569768074,
+            0.05826234914259677
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 38258,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.20366473767824697,
+            0.2036674918156388
+          ],
+          "loss": [
+            0.1062533090956887,
+            0.10625300214919359
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.2036945233233158,
+            0.20369431307865107
+          ],
+          "loss": [
+            0.10643095181373327,
+            0.10643094779353361
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 64298,
+      "positive_sections": 16,
+      "sections_at_fraction_threshold": 13,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.11503233625145352,
+            0.11492449713987012
+          ],
+          "loss": [
+            0.05444160949588775,
+            0.05444127179750844
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.11467429334584683,
+            0.11467429334584683
+          ],
+          "loss": [
+            0.05344077651187219,
+            0.05344077651187219
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 102112,
+      "positive_sections": 14,
+      "sections_at_fraction_threshold": 12,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.05114147645197524,
+            0.051141345137433916
+          ],
+          "loss": [
+            0.01194741520291245,
+            0.011947415157687904
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.051732520254140664,
+            0.05169150412371683
+          ],
+          "loss": [
+            0.011254209693678031,
+            0.011254155204857744
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 77068,
+      "positive_sections": 18,
+      "sections_at_fraction_threshold": 15,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.10682810542724105,
+            0.10682810542724105
+          ],
+          "loss": [
+            0.054123090885783716,
+            0.054123090885783716
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.11678747472975402,
+            0.11690500313677836
+          ],
+          "loss": [
+            0.04647114099151251,
+            0.04635801191922642
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 104638,
+      "positive_sections": 20,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.1496903874042869,
+            0.14919834770760154
+          ],
+          "loss": [
+            0.05711693096840558,
+            0.05703931734634797
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16092343890930688,
+            0.1553898433503668
+          ],
+          "loss": [
+            0.06596229110829958,
+            0.06466377757080403
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 176168,
+      "positive_sections": 37,
+      "sections_at_fraction_threshold": 26,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2411625457463873,
+            0.24120191856913037
+          ],
+          "loss": [
+            0.09236003457883092,
+            0.0923596545884994
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.23091311957218771,
+            0.23091311957218771
+          ],
+          "loss": [
+            0.09262584887354203,
+            0.09262584887354203
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 83571,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 19,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.0877867523261756,
+            0.08782732415098678
+          ],
+          "loss": [
+            0.03615210437626154,
+            0.03614829961188998
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.09939626712349692,
+            0.09976974748715627
+          ],
+          "loss": [
+            0.038560154145396854,
+            0.038071862883195424
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 13173,
+      "positive_sections": 16,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.10917994938448086,
+            0.10916944304981177
+          ],
+          "loss": [
+            0.02747788922687178,
+            0.027477883782571943
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16440770298331497,
+            0.16440770298331497
+          ],
+          "loss": [
+            0.05078971641411648,
+            0.05078971641411648
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 115635,
+      "positive_sections": 12,
+      "sections_at_fraction_threshold": 11,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.08820166807904846,
+            0.08820166807904846
+          ],
+          "loss": [
+            0.047386100038220656,
+            0.047386100038220656
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.08855983995787314,
+            0.08855983995787314
+          ],
+          "loss": [
+            0.045677252807797705,
+            0.045677252807797705
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 153398,
+      "positive_sections": 12,
+      "sections_at_fraction_threshold": 11,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.048459667555264124,
+            0.048459667555264124
+          ],
+          "loss": [
+            0.02005318419589435,
+            0.02005318419589435
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.04376312356483284,
+            0.04399054066485773
+          ],
+          "loss": [
+            0.01867929085710538,
+            0.018435491143787033
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 36180,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 13,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.13817189770983263,
+            0.1381896594141076
+          ],
+          "loss": [
+            0.06092045433766739,
+            0.06092000469243819
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.13807048037930936,
+            0.13807048037930936
+          ],
+          "loss": [
+            0.06533282316738216,
+            0.06533282316738216
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 54273,
+      "positive_sections": 14,
+      "sections_at_fraction_threshold": 13,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.16296410484122972,
+            0.16313438916416423
+          ],
+          "loss": [
+            0.055431099862927706,
+            0.055429305640959825
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.16328472013128414,
+            0.16328472013128414
+          ],
+          "loss": [
+            0.054857058783523344,
+            0.054857058783523344
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 39684,
+      "positive_sections": 26,
+      "sections_at_fraction_threshold": 22,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.16032182113380428,
+            0.16032182113380428
+          ],
+          "loss": [
+            0.05114445407368102,
+            0.05114445407368102
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.19267846964179094,
+            0.19267846964179094
+          ],
+          "loss": [
+            0.055620731245331866,
+            0.055620731245331866
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 9919,
+      "positive_sections": 17,
+      "sections_at_fraction_threshold": 15,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.08603878667916866,
+            0.08603878667916866
+          ],
+          "loss": [
+            0.03612228310302115,
+            0.03612228310302115
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.0857591792380107,
+            0.0857591792380107
+          ],
+          "loss": [
+            0.03551010426748807,
+            0.03551010426748807
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 98920,
+      "positive_sections": 22,
+      "sections_at_fraction_threshold": 12,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.12217710339155786,
+            0.12217691375228265
+          ],
+          "loss": [
+            0.06280818286405748,
+            0.0628071426285607
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.12217660163888594,
+            0.12217660163888594
+          ],
+          "loss": [
+            0.06276102057847575,
+            0.06276102057847575
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 39123,
+      "positive_sections": 15,
+      "sections_at_fraction_threshold": 15,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.17889826194204858,
+            0.17878238384328793
+          ],
+          "loss": [
+            0.054316674656164604,
+            0.054312802109327464
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.17831233266767357,
+            0.17829149401974936
+          ],
+          "loss": [
+            0.05362768131315618,
+            0.053623591577406926
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 37907,
+      "positive_sections": 6,
+      "sections_at_fraction_threshold": 5,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.0014529642226384044,
+            0.0014825722978889563
+          ],
+          "loss": [
+            0.0005432346015216416,
+            0.0005424033727403095
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            3.581489874045772e-05,
+            3.581489874045772e-05
+          ],
+          "loss": [
+            3.408007377937562e-08,
+            3.408007377937562e-08
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 107367,
+      "positive_sections": 16,
+      "sections_at_fraction_threshold": 12,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.055851256295429745,
+            0.055851256295429745
+          ],
+          "loss": [
+            0.017437269204449903,
+            0.017437269204449903
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.06598470810170554,
+            0.06598470810170554
+          ],
+          "loss": [
+            0.02255959345308756,
+            0.02255959345308756
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 17154,
+      "positive_sections": 34,
+      "sections_at_fraction_threshold": 26,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.2744909346714868,
+            0.274477345047473
+          ],
+          "loss": [
+            0.14712933879369555,
+            0.14712929779052425
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.30002062236396293,
+            0.3007595341359079
+          ],
+          "loss": [
+            0.1581479150914557,
+            0.15808773457425374
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 28380,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 21,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.20046622829497043,
+            0.20046622829497043
+          ],
+          "loss": [
+            0.08328191908438003,
+            0.08328191908438003
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.20203385982655991,
+            0.20203385982655991
+          ],
+          "loss": [
+            0.08362848158122745,
+            0.08362848158122745
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 34337,
+      "positive_sections": 26,
+      "sections_at_fraction_threshold": 17,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.18773185404900297,
+            0.18788520562350244
+          ],
+          "loss": [
+            0.07586991467232834,
+            0.07585514864589485
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.18805773098668604,
+            0.18805773098668604
+          ],
+          "loss": [
+            0.07979365175507254,
+            0.07979365175507254
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 23140,
+      "positive_sections": 24,
+      "sections_at_fraction_threshold": 16,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.07983502246584014,
+            0.07983502246584014
+          ],
+          "loss": [
+            0.03268934753133049,
+            0.03268934753133049
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.07978418281001326,
+            0.07978418281001326
+          ],
+          "loss": [
+            0.032027099904128345,
+            0.032027099904128345
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "event_index": 90933,
+      "positive_sections": 29,
+      "sections_at_fraction_threshold": 22,
+      "operators": {
+        "integrated": {
+          "tv": [
+            0.15118667491830398,
+            0.15118667491830398
+          ],
+          "loss": [
+            0.058829044047156484,
+            0.058829044047156484
+          ],
+          "converged": [
+            true,
+            true
+          ]
+        },
+        "center": {
+          "tv": [
+            0.1518038121762211,
+            0.15167005686111965
+          ],
+          "loss": [
+            0.059129735284578,
+            0.05901291757238089
+          ],
+          "converged": [
+            false,
+            true
+          ]
+        }
+      }
+    }
+  ],
+  "component_scan": {
+    "exports": {
+      "components_6.json": "faa4ef209a900ee8027949998bd0b67eba63f8d6427ccfe42a13498fd3e81f26",
+      "components_8.json": "c75399297b26c8ed90c323ac5c8045443f683a71dd3d8ec4dd867dc123c27e06"
+    },
+    "summaries": [
+      {
+        "k": 4,
+        "projection": "integrated",
+        "shape_coordinates": 27,
+        "tv_mean": 0.1419168774387114,
+        "loss_mean": 0.058897512600597945,
+        "success": 96,
+        "median_selected_iterations": 252.5,
+        "paired_tv_mean": 0.0,
+        "paired_tv_interval_95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "k": 4,
+        "projection": "center",
+        "shape_coordinates": 27,
+        "tv_mean": 0.14581898652153477,
+        "loss_mean": 0.06062663669717668,
+        "success": 96,
+        "median_selected_iterations": 219.0,
+        "paired_tv_mean": 0.0,
+        "paired_tv_interval_95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "k": 6,
+        "projection": "integrated",
+        "shape_coordinates": 41,
+        "tv_mean": 0.08805972130656824,
+        "loss_mean": 0.03550316189654642,
+        "success": 96,
+        "median_selected_iterations": 414.5,
+        "paired_tv_mean": -0.05385715613214315,
+        "paired_tv_interval_95": [
+          -0.06029172458508023,
+          -0.04719196999452662
+        ]
+      },
+      {
+        "k": 6,
+        "projection": "center",
+        "shape_coordinates": 41,
+        "tv_mean": 0.09534581584830519,
+        "loss_mean": 0.03807277597650005,
+        "success": 91,
+        "median_selected_iterations": 334.5,
+        "paired_tv_mean": -0.05047317067322959,
+        "paired_tv_interval_95": [
+          -0.05690143320956139,
+          -0.04406563539674296
+        ]
+      },
+      {
+        "k": 8,
+        "projection": "integrated",
+        "shape_coordinates": 55,
+        "tv_mean": 0.05658717269239081,
+        "loss_mean": 0.02270476980528385,
+        "success": 82,
+        "median_selected_iterations": 517.0,
+        "paired_tv_mean": -0.08532970474632058,
+        "paired_tv_interval_95": [
+          -0.09349588244192511,
+          -0.07692930275222475
+        ]
+      },
+      {
+        "k": 8,
+        "projection": "center",
+        "shape_coordinates": 55,
+        "tv_mean": 0.06577901713793304,
+        "loss_mean": 0.02501500714156192,
+        "success": 90,
+        "median_selected_iterations": 280.5,
+        "paired_tv_mean": -0.08003996938360175,
+        "paired_tv_interval_95": [
+          -0.08799298057646819,
+          -0.07169443568714896
+        ]
+      }
+    ]
+  }
+}

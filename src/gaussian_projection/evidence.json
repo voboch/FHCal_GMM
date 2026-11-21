@@ -1,0 +1,16 @@
+{
+  "status": "verified_archival_eventwise_diagnostic",
+  "evaluated_on": "2026-11-20",
+  "historical_code": "d64b5e35739792700001495024a5ed68a6abc14c",
+  "historical_results_commit": "36040f1",
+  "student_geometry_commit": "200744156f5eaeeca9da503b53232febf3186cca",
+  "geometry_snapshot_sha256": "3f577faabdfef84e815760830ce4e716d7894acc26fa90f708127910a91dfdba",
+  "exports": {
+    "pilot_results.json": "38e4f2a526a3cad47cd29d46ad2043698919a77b95f430ebc0ace8280190f8cb",
+    "width_sensitivity.json": "fddd45abda6e6991aff26b0398ab9ab43d30d7f7d7e00a1b247765415e89e796",
+    "example_event.json": "d89c504fffe5a929f3eb918244086d79e95ce8602314b310875e1bb82bbc56b3",
+    "example_events.json": "51b0d29bfd28068d6fab19c56616ca428fc056f296527c1e944a20ef8a89fca9"
+  },
+  "selection_role": "eventwise_in_sample_fit; width sensitivity is post-pilot with matched rows",
+  "claim_scope": "shape representation on this NPZ; primary multiplicity and physical geometry unverified"
+}

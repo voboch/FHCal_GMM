@@ -1,0 +1,5 @@
+# Direct dependencies verified with Python 3.13.9; independent of the GAN environment.
+numpy==2.4.4
+scipy==1.17.0
+matplotlib==3.10.9
+pytest==9.0.3

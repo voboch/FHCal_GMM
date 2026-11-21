@@ -1,0 +1,33 @@
+{
+  "status": "archival_eventwise_transfer_check",
+  "data_branch": "virtual_grid-gnn",
+  "data_commit": "200744156f5eaeeca9da503b53232febf3186cca",
+  "data_archive_path": "GAN_project/data/fhcal_data_side_modules81619_180.zip",
+  "data_archive_git_blob": "4257fefbef843a29be628b55381d2a18a5750eec",
+  "data_archive_sha256": "63079e7e1292541c2dca84373c5d3ffdfced9130ca18ac8705ec10f09ca80b8a",
+  "input_npz_sha256": "3104573217991bd1b5be022f6cca168da1c88a9daec8b9d283539c47ee0ae130",
+  "evaluator_commit": "6330fbb1badae807cb1415de82b441bc28caf2fc",
+  "geometry_snapshot_sha256": "3f577faabdfef84e815760830ce4e716d7894acc26fa90f708127910a91dfdba",
+  "claim_scope": "proton-coded NPZ rows; in-sample shape; geometry, primary multiplicity and independent event IDs unverified",
+  "exports": {
+    "pilot_results.json": "75b383cd24a5fcc136199f6b7d2aa522cb385e909f277d331ae96fa65554261c",
+    "width_sensitivity.json": "f70e39f786e57dfd18473067bb45f6b401e8ae36dfd2dd3459403f0c2f1f9e2a",
+    "example_events.json": "f2fb2ca1e286eae78e33aed7e349789beb3f43246dba964a7d68a58003447429",
+    "restarts_200.json": "aa88654eb8ca0ef3116bc8d4e0c74b4992d61dee3415dd6eda45c0f7a4099e4b",
+    "restarts_800.json": "25e7f681c96cbda7ef38686eec4203136dfb8ca0da4255a51dbda34265addd55",
+    "components_6.json": "faa4ef209a900ee8027949998bd0b67eba63f8d6427ccfe42a13498fd3e81f26",
+    "components_8.json": "c75399297b26c8ed90c323ac5c8045443f683a71dd3d8ec4dd867dc123c27e06",
+    "optimizer_diagnostics.json": "64607f7e0271c3228ac52414425a40f130fd77b3245f467308626809bb51f75f",
+    "event_dependence.json": "58631b433efdd9a50c0fd446609ba9dc15eab3b4f95ba976ccf60e47939ea77b",
+    "directions/group_1.json": "e3aa1bb597a0553e2fff0219810d673554065d4dd2727e5066c38aa60c31673d",
+    "directions/group_2.json": "0ea658d157ddbedc49be991825bd23a66c8eaf31c398007d63f106942dc5fcf8",
+    "directions/group_4.json": "f3503d3e9afc48363ae53a8d5a1856bbc5fd23d9b67b1354a5bdac633fdf6f22",
+    "directions/group_5.json": "a857f1eb029fee26f2c101c6d29fee7eda01706d83b4210c26218b5363c79af6"
+  },
+  "diagnostic_code_sha256": {
+    "evaluate_gaussian_projection.py": "b00e073872249ec5e0ed2ea98b637b7fb3577770a2873df77fbe9b54da754bee",
+    "pipeline/gaussian_projection.py": "186df875177c85610e86423d41a06ce9ed82e0572001c4c676f0982c1de306c7",
+    "audit_gaussian_projection_optimizer.py": "4e1fe6ab3dbba1219021442fe037ca35b53014fd0a0792ef19c1b1b7bf8c1b16"
+  },
+  "event_analysis_code_sha256": "1a7b505cb9d2a19f6155b61bc95bc64e0a159e5bbce563ae1071ab2105c45ab5"
+}

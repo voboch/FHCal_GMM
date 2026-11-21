@@ -1,0 +1,7 @@
+data:
+  path: null
+trainer:
+  workers: 4
+  calibrate: true
+run:
+  output_dir: outputs/proton_bank

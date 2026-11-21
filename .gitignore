@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.DS_Store
+/data/
+/outputs/
+/src/gaussian_projection/report.html
+/src/gaussian_projection/proton_pilot/report.html
+/src/gaussian_projection/proton_pilot/conditional_baseline/decoder_report.html

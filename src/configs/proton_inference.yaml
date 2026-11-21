@@ -1,0 +1,9 @@
+model:
+  bank: src/gaussian_projection/proton_pilot/conditional_baseline/bank.npz
+inferencer:
+  decoder: stochastic
+  direction: 3
+  events: 100
+  seed: 17
+  packets_per_component: null
+  output: outputs/proton_responses.npz
