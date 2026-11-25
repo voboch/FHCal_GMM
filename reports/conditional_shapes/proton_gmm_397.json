@@ -1,0 +1,37 @@
+{
+  "species": "proton",
+  "kind": "gmm",
+  "seed": 397,
+  "steps": 800,
+  "critic_steps": 2400,
+  "seconds": 10.427936499938369,
+  "generator_parameters": 15594,
+  "critic_parameters": 52129,
+  "history": [
+    {
+      "step": 200,
+      "critic_gap": 0.027441345155239105,
+      "gp": 0.0005452477489598095,
+      "generator_loss": 0.028224442154169083
+    },
+    {
+      "step": 400,
+      "critic_gap": 0.055574625730514526,
+      "gp": 0.0008074432262219489,
+      "generator_loss": 0.2508811056613922
+    },
+    {
+      "step": 600,
+      "critic_gap": -0.024559274315834045,
+      "gp": 0.0013028784887865186,
+      "generator_loss": 0.16100949048995972
+    },
+    {
+      "step": 800,
+      "critic_gap": -0.015456870198249817,
+      "gp": 0.0007222712738439441,
+      "generator_loss": 0.12431536614894867
+    }
+  ],
+  "torch_version": "2.9.1"
+}

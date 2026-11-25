@@ -1,0 +1,1225 @@
+{
+  "version": 1,
+  "hypotheses": {
+    "hyp.fhcal.fixed-total": {
+      "question": "Какая модель воспроизводит частоту превышения модульного q95 при фиксированной сумме отклика?"
+    },
+    "hyp.fhcal.generated-total-q95": {
+      "question": "Сохраняется ли ранжирование моделей формы при генерации суммарного сигнала CFM?"
+    },
+    "hyp.fhcal.section-sparsity": {
+      "question": "Уменьшает ли отбор секций по числу положительных сигналов обучающей записи ошибку частот срабатываний с сохранением качества модульных хвостов?"
+    },
+    "hyp.fhcal.generated-total-replication": {
+      "question": "Сохраняется ли порядок трёх генераторов по средней ошибке модульной частоты q95 при замене контрольных строк?"
+    }
+  },
+  "results": {
+    "res.fhcal.fixed-total-q95": {
+      "hypothesis": "hyp.fhcal.fixed-total",
+      "status": "verified",
+      "scope": "При наблюдаемом суммарном сигнале, на трёх мюонных и пяти протонных направлениях. Порог q95 задан по положительным калибровочным сигналам. Частота учитывает все 4096 контрольных строк направления.",
+      "code_revision": "Снимок рабочих файлов подготовки, обучения и оценки привязан SHA-256 в sources.",
+      "run": "Для каждого вида и каждой из двух WGAN-GP три обучения, seed 173, 283 и 397. Квитанции и checkpoint в sources.",
+      "configuration": "800 шагов генератора, 2400 шагов критика. 4 компоненты GMM у мюонов, 6 у протонов. Эмпирическая форма выбирается из 16 ближайших по log T записей того же направления.",
+      "review": "Средние из summary.json сверены с экспортами по направлениям и с печатной таблицей отчёта и обзорного слайда.",
+      "sources": [
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/summary.json",
+          "sha256": "c5a5d34a4abc29eb56ac0c0996d85667703d4cc17f75118ed3352d5d112f20f5",
+          "fields": {
+            "muon_empirical_mae_pp_by_run": [
+              "muon",
+              "empirical",
+              "tail_mae_pp"
+            ],
+            "muon_direct_mae_pp_by_run": [
+              "muon",
+              "direct",
+              "tail_mae_pp"
+            ],
+            "muon_gmm_mae_pp_by_run": [
+              "muon",
+              "gmm",
+              "tail_mae_pp"
+            ],
+            "muon_gmm_minus_direct_mean_pp": [
+              "muon",
+              "gmm_minus_direct",
+              "mean"
+            ],
+            "muon_gmm_minus_direct_paired_bootstrap_percentiles_pp": [
+              "muon",
+              "gmm_minus_direct",
+              "paired_bootstrap_percentiles"
+            ],
+            "proton_empirical_mae_pp_by_run": [
+              "proton",
+              "empirical",
+              "tail_mae_pp"
+            ],
+            "proton_direct_mae_pp_by_run": [
+              "proton",
+              "direct",
+              "tail_mae_pp"
+            ],
+            "proton_gmm_mae_pp_by_run": [
+              "proton",
+              "gmm",
+              "tail_mae_pp"
+            ],
+            "proton_gmm_minus_direct_mean_pp": [
+              "proton",
+              "gmm_minus_direct",
+              "mean"
+            ],
+            "proton_gmm_minus_direct_paired_bootstrap_percentiles_pp": [
+              "proton",
+              "gmm_minus_direct",
+              "paired_bootstrap_percentiles"
+            ]
+          }
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/PROTOCOL.md",
+          "sha256": "2e04d8d7c677cadb331dbfe4ed5c9657545f6977b9548b2159f557c1b4de1201",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_directions.csv",
+          "sha256": "ab53a594c842119cf9975cc1526931691e08a95f9416fce850522905f0d75021",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_directions.csv",
+          "sha256": "6f3987a4e610d1e3b4d35624052539b4912ab02c8e8c6bc6222933958b38a9f7",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_modules.csv",
+          "sha256": "c4dc27848ddbdce11d7b079b78d612f2538153e08a192f9a2fc1d8c6c3de91ce",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_modules.csv",
+          "sha256": "c5c326cb5b47a3f22e6a307b7b3f9fed108d6f2737c6cff1ed88fbdf825f8e94",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_reference.json",
+          "sha256": "338b96ed64f56c671c9c8412ad3a947340bcc7d987fd32d564d83ace46c4e7bd",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_reference.json",
+          "sha256": "666aa60ffb75158b2d0bcb3685a483fd55c291b15780cfa2bdf15fbf4fce751f",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_direct_173.json",
+          "sha256": "8233c61510c9d1851e73de13cc61bc239fe35eebd569ce7a9ab718eef4a25e58",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_direct_283.json",
+          "sha256": "73b0e55e947a4fb6e98240ab47f152e755f648190c386aa0cf27667b7c960725",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_direct_397.json",
+          "sha256": "d8b2ff233ba5b5824de0657a411ea893c7e5a7d80ce1016118da16a95ae6a262",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_gmm_173.json",
+          "sha256": "e1329a821036c306f0f2cdf669a3e6b2d44826a516430ae4d7116ec9280822bf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_gmm_283.json",
+          "sha256": "df80441992ca9a0571e487b7e22a10539ed99e70827e943e0e2b8472929804f5",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_gmm_397.json",
+          "sha256": "40ae0f7b72d7d5dc23403a1a375f5fb79bd8ed17ffcc4a991c7f0f2d24a7c077",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_direct_173.json",
+          "sha256": "9b35997805a68ff3b50941e5e2fb8f680c797fc4b9210de0ea229dcec9f067c5",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_direct_283.json",
+          "sha256": "4424586f936fe9118a49474c992cefdccd7e56fb90c68a857040ced0177afdd2",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_direct_397.json",
+          "sha256": "cad6d159b7a8edcba78bbc8856b21643c09cc87963d253ce33ea925432d078db",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_gmm_173.json",
+          "sha256": "19bf413a5dab18142a41c1ed6154ea0e3e25385b12a9b4b281e7bb8252124c43",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_gmm_283.json",
+          "sha256": "fa3f45a86c7e531ecc06d8280e9cd358cdbc45b39755d8244e8beb58d78dc0c6",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_gmm_397.json",
+          "sha256": "f853f8761bab29a1c9c65e746da9dd9976884bbcc9e613886de1487478786581",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_173.pt",
+          "sha256": "21bfa441a8ceb6716186b71b860c6fa75998dbf6350926990c232bda066c4ddf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_283.pt",
+          "sha256": "babd599096ffb759031f0367baea1565e493a9c2ccb4f2ecf57fb953def719ce",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_397.pt",
+          "sha256": "8b0f4b6ed115babb1f125d5a73d0e696158171a282ab7c2d247a89033ab1a6aa",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_173.pt",
+          "sha256": "858e0cb48ffd34ededa72ccbaa7bbc0e7951cc1a3968bbe1615af9ffff328236",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_283.pt",
+          "sha256": "cf8a3010bdeaf3fce6e9104762c2d1a30640976c5f14b4cbb99c4f2cb6793924",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_397.pt",
+          "sha256": "f895cc730ad98c1e457b24015b725a8ac1c30583b9359e332af24f4e55b24fa1",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_173.pt",
+          "sha256": "c99ac41b4180f313157e78d784c128d636f3bc18c482f12dffb81411eccb437b",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_283.pt",
+          "sha256": "43e08dc0f71006a4a27248b9d0e6d34cc72eeae057b8b0bd961fec6c87ee95bf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_397.pt",
+          "sha256": "19586a15980eaa0e50c06e83fb1e30bc85084ffd714f3249bd05b16f8392784f",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_173.pt",
+          "sha256": "8b29647d80a35048af574305423d6930e3701427dbcb8fcd256767ed2f3615e9",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_283.pt",
+          "sha256": "32db1481494de60df4cb9043f68bf953fb1f21874cd2ce74a0b8c12b98481970",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_397.pt",
+          "sha256": "a153100a123322f647933166d52644122a6619bd794ee86dc621fa514cfee3d3",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/prepare_shape_comparison.py",
+          "sha256": "46056e20ac942a8b7073275e262054006df99d16a508e7189af43cbd88172bbd",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/conditional_shape_wgan.py",
+          "sha256": "cc2bdba68ecb538a1114c0d52e78ab02df2fd893f932f1ea74715efae8772af6",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/evaluate_conditional_shapes.py",
+          "sha256": "4108e72d6a461be088967c50d22ff8222e84777e7e16018630321477c2e6b01a",
+          "fields": {}
+        }
+      ]
+    },
+    "res.fhcal.generated-total-q95": {
+      "hypothesis": "hyp.fhcal.generated-total-q95",
+      "status": "verified",
+      "scope": "4096 генераций и 4096 контрольных строк на направление, 3 направления µ⁺ и 5 направлений p, 6 и 123 пригодные пары модуль–направление. Порог по положительным сигналам калибровки, частота по всем строкам.",
+      "code_revision": "BM@N/FHCal/FHCal_GMM/src/evaluate_generated_total.py (SHA-256 в sources)",
+      "run": "Два сохранённых CFM, по одной модели на вид. Три инициализации каждой архитектуры WGAN и три розыгрыша эмпирической формы.",
+      "configuration": "Общие сгенерированные суммы в каждой группе. Независимое ресэмплирование контроля и генераций, 400 повторов.",
+      "review": "Сверка расчёта и агрегированных чисел с экспортами и итоговыми материалами от 24 ноября.",
+      "sources": [
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_173.pt",
+          "sha256": "21bfa441a8ceb6716186b71b860c6fa75998dbf6350926990c232bda066c4ddf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_283.pt",
+          "sha256": "babd599096ffb759031f0367baea1565e493a9c2ccb4f2ecf57fb953def719ce",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_397.pt",
+          "sha256": "8b0f4b6ed115babb1f125d5a73d0e696158171a282ab7c2d247a89033ab1a6aa",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_173.pt",
+          "sha256": "858e0cb48ffd34ededa72ccbaa7bbc0e7951cc1a3968bbe1615af9ffff328236",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_283.pt",
+          "sha256": "cf8a3010bdeaf3fce6e9104762c2d1a30640976c5f14b4cbb99c4f2cb6793924",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_397.pt",
+          "sha256": "f895cc730ad98c1e457b24015b725a8ac1c30583b9359e332af24f4e55b24fa1",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_173.pt",
+          "sha256": "c99ac41b4180f313157e78d784c128d636f3bc18c482f12dffb81411eccb437b",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_283.pt",
+          "sha256": "43e08dc0f71006a4a27248b9d0e6d34cc72eeae057b8b0bd961fec6c87ee95bf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_397.pt",
+          "sha256": "19586a15980eaa0e50c06e83fb1e30bc85084ffd714f3249bd05b16f8392784f",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_173.pt",
+          "sha256": "8b29647d80a35048af574305423d6930e3701427dbcb8fcd256767ed2f3615e9",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_283.pt",
+          "sha256": "32db1481494de60df4cb9043f68bf953fb1f21874cd2ce74a0b8c12b98481970",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_397.pt",
+          "sha256": "a153100a123322f647933166d52644122a6619bd794ee86dc621fa514cfee3d3",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_reference.json",
+          "sha256": "338b96ed64f56c671c9c8412ad3a947340bcc7d987fd32d564d83ace46c4e7bd",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_reference.json",
+          "sha256": "666aa60ffb75158b2d0bcb3685a483fd55c291b15780cfa2bdf15fbf4fce751f",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/PROTOCOL.md",
+          "sha256": "410426f8e35c653b476b6878c96dc9c8d3f9791f99a2e226b46610e18a8bf745",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/muon_directions.csv",
+          "sha256": "e998ef3e4738f8fc8f3609e9e555266138f36bd0884657e11872648a4f077fb9",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/muon_modules.csv",
+          "sha256": "05b8578a1a2972a03e72847cb1804512cd7003ed08a34aeb886096872eede6ed",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/muon_totals.csv",
+          "sha256": "570a25687f4ffe76fb137d2a4d11f032b9742bea48ae397322abeafe8491fa4b",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/proton_directions.csv",
+          "sha256": "266356a5bda49e4ac227b58df1d82d5a65de49c0b39e79eb5de34d8467653eab",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/proton_modules.csv",
+          "sha256": "5dbd510678f585809c7f4783b8dfee6b447e58964c42d8624c8eccc4f831b9a2",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/proton_totals.csv",
+          "sha256": "c97eab3fef99107027af84191df4c08a8ab19e3440fa9239b4fd7764633ed8fc",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/receipt.json",
+          "sha256": "5ab98056755eabfa1343896e58792640b00b12656f8b7ef225e3f4707eefb092",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/summary.json",
+          "sha256": "6acb1f77821b97bd59fc85ddf1671f773672f78720e68ae46ed0cd4196ceba75",
+          "fields": {
+            "muon_empirical_tail_mae_pp": [
+              "muon",
+              "empirical",
+              "tail_mae_pp"
+            ],
+            "muon_empirical_by_seed_pp": [
+              "muon",
+              "empirical",
+              "by_seed_pp"
+            ],
+            "muon_direct_tail_mae_pp": [
+              "muon",
+              "direct",
+              "tail_mae_pp"
+            ],
+            "muon_direct_by_seed_pp": [
+              "muon",
+              "direct",
+              "by_seed_pp"
+            ],
+            "muon_gmm_tail_mae_pp": [
+              "muon",
+              "gmm",
+              "tail_mae_pp"
+            ],
+            "muon_gmm_by_seed_pp": [
+              "muon",
+              "gmm",
+              "by_seed_pp"
+            ],
+            "muon_gmm_minus_direct_mean_pp": [
+              "muon",
+              "gmm_minus_direct",
+              "mean_pp"
+            ],
+            "muon_gmm_minus_direct_bootstrap_95_pp": [
+              "muon",
+              "gmm_minus_direct",
+              "bootstrap_95_pp"
+            ],
+            "muon_total_tail_mae_pp": [
+              "muon",
+              "total_tail_mae_pp"
+            ],
+            "proton_empirical_tail_mae_pp": [
+              "proton",
+              "empirical",
+              "tail_mae_pp"
+            ],
+            "proton_empirical_by_seed_pp": [
+              "proton",
+              "empirical",
+              "by_seed_pp"
+            ],
+            "proton_direct_tail_mae_pp": [
+              "proton",
+              "direct",
+              "tail_mae_pp"
+            ],
+            "proton_direct_by_seed_pp": [
+              "proton",
+              "direct",
+              "by_seed_pp"
+            ],
+            "proton_gmm_tail_mae_pp": [
+              "proton",
+              "gmm",
+              "tail_mae_pp"
+            ],
+            "proton_gmm_by_seed_pp": [
+              "proton",
+              "gmm",
+              "by_seed_pp"
+            ],
+            "proton_gmm_minus_direct_mean_pp": [
+              "proton",
+              "gmm_minus_direct",
+              "mean_pp"
+            ],
+            "proton_gmm_minus_direct_bootstrap_95_pp": [
+              "proton",
+              "gmm_minus_direct",
+              "bootstrap_95_pp"
+            ],
+            "proton_total_tail_mae_pp": [
+              "proton",
+              "total_tail_mae_pp"
+            ]
+          }
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/muon_flow/conditional_tail_flow.pt",
+          "sha256": "17dd139cd2332e6ff63917e87d6c9756f22e112bbee7d15ae38e30da645c1845",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/muon_flow.json",
+          "sha256": "dc0ef273cb075ba4c7ae2a69753a76ccf8efd7d568235e305b1a597fdd16cb47",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/muon_split.json",
+          "sha256": "1ee6c1636b19a5c8b1df64bd1e18ef1a75841b400028033e84e83d6862481ccf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/proton_flow/conditional_tail_flow.pt",
+          "sha256": "0baf05bf5506ee95aa8c23d78c32b9718eb1db8596b8d9307c9aa316697e53ba",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/proton_flow.json",
+          "sha256": "b7970871f4276bfde6136676ce7fc679a343a89e3703eb7787d0876e6695cb1b",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/proton_split.json",
+          "sha256": "6e87a74af33ae91a6984ed2c58bfb25fd1446d167e8a726cba691e1ff1609080",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/analyze_gmm_packet_decoder.py",
+          "sha256": "fc70ffd29116866d9ca010d753d4da53bce816459444ed817941360f0dd5c1fc",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/conditional_shape_wgan.py",
+          "sha256": "cc2bdba68ecb538a1114c0d52e78ab02df2fd893f932f1ea74715efae8772af6",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/conditional_tail_flow.py",
+          "sha256": "b401492990b90b56d14642cf05f9673c35e5d2427ecbdae18e1125a12b1dd87a",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/evaluate_conditional_shapes.py",
+          "sha256": "4108e72d6a461be088967c50d22ff8222e84777e7e16018630321477c2e6b01a",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/evaluate_generated_total.py",
+          "sha256": "61608b7f48e9ef5749026375cd06517e18660b0f86ba519913da24bed6996d18",
+          "fields": {}
+        }
+      ]
+    },
+    "res.fhcal.section-sparsity": {
+      "hypothesis": "hyp.fhcal.section-sparsity",
+      "status": "verified",
+      "scope": "Наблюдаемые суммы T контрольных записей, 438 чувствительных секций, прежние 3 направления µ⁺ и 5 направлений p, по 4096 строк на направление.",
+      "code_revision": "BM@N/FHCal/FHCal_GMM/src/evaluate_section_sparsity.py (SHA-256 в sources)",
+      "run": "Повторная оценка трёх сохранённых инициализаций прямого и интегрального WGAN-GP. Общий донор k для обеих архитектур.",
+      "configuration": "Равновероятный выбор из 16 ближайших по log T обучающих строк того же направления, сохранение k крупнейших сигналов и нормировка к T.",
+      "review": "Сверка расчёта и агрегированных чисел с экспортами и итоговыми материалами от 24 ноября.",
+      "sources": [
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_173.pt",
+          "sha256": "21bfa441a8ceb6716186b71b860c6fa75998dbf6350926990c232bda066c4ddf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_283.pt",
+          "sha256": "babd599096ffb759031f0367baea1565e493a9c2ccb4f2ecf57fb953def719ce",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_direct_397.pt",
+          "sha256": "8b0f4b6ed115babb1f125d5a73d0e696158171a282ab7c2d247a89033ab1a6aa",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_173.pt",
+          "sha256": "858e0cb48ffd34ededa72ccbaa7bbc0e7951cc1a3968bbe1615af9ffff328236",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_283.pt",
+          "sha256": "cf8a3010bdeaf3fce6e9104762c2d1a30640976c5f14b4cbb99c4f2cb6793924",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/muon_gmm_397.pt",
+          "sha256": "f895cc730ad98c1e457b24015b725a8ac1c30583b9359e332af24f4e55b24fa1",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_173.pt",
+          "sha256": "c99ac41b4180f313157e78d784c128d636f3bc18c482f12dffb81411eccb437b",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_283.pt",
+          "sha256": "43e08dc0f71006a4a27248b9d0e6d34cc72eeae057b8b0bd961fec6c87ee95bf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_direct_397.pt",
+          "sha256": "19586a15980eaa0e50c06e83fb1e30bc85084ffd714f3249bd05b16f8392784f",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_173.pt",
+          "sha256": "8b29647d80a35048af574305423d6930e3701427dbcb8fcd256767ed2f3615e9",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_283.pt",
+          "sha256": "32db1481494de60df4cb9043f68bf953fb1f21874cd2ce74a0b8c12b98481970",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/models/proton_gmm_397.pt",
+          "sha256": "a153100a123322f647933166d52644122a6619bd794ee86dc621fa514cfee3d3",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_reference.json",
+          "sha256": "338b96ed64f56c671c9c8412ad3a947340bcc7d987fd32d564d83ace46c4e7bd",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_reference.json",
+          "sha256": "666aa60ffb75158b2d0bcb3685a483fd55c291b15780cfa2bdf15fbf4fce751f",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/summary.json",
+          "sha256": "c5a5d34a4abc29eb56ac0c0996d85667703d4cc17f75118ed3352d5d112f20f5",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/section_sparsity/PROTOCOL.md",
+          "sha256": "44f277c30c4c8cc2d7e3ff27293da2e269812b9709d20036739bf415a1aacba3",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/section_sparsity/directions.csv",
+          "sha256": "769f311fb5520079aa25963b5e42ae46e941aa832a086745193a12fcb06e5bac",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/section_sparsity/receipt.json",
+          "sha256": "4f92d3c1e86138b48fa2ecce85af2c46fd0938a912cec0eaf861092d46ac6467",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/section_sparsity/summary.json",
+          "sha256": "1efb64792ddc4cd6a4c581709fbfe761ef89f342fd2d0d6113f9c85bd5f7d006",
+          "fields": {
+            "muon_direct_section_rate_mae_pp": [
+              "muon",
+              "direct",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "muon_direct_count_w1": [
+              "muon",
+              "direct",
+              "count_w1",
+              "mean"
+            ],
+            "muon_direct_tail_mae_pp": [
+              "muon",
+              "direct",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "muon_direct_topk_section_rate_mae_pp": [
+              "muon",
+              "direct_topk",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "muon_direct_topk_count_w1": [
+              "muon",
+              "direct_topk",
+              "count_w1",
+              "mean"
+            ],
+            "muon_direct_topk_tail_mae_pp": [
+              "muon",
+              "direct_topk",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "muon_gmm_section_rate_mae_pp": [
+              "muon",
+              "gmm",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "muon_gmm_count_w1": [
+              "muon",
+              "gmm",
+              "count_w1",
+              "mean"
+            ],
+            "muon_gmm_tail_mae_pp": [
+              "muon",
+              "gmm",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "muon_gmm_topk_section_rate_mae_pp": [
+              "muon",
+              "gmm_topk",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "muon_gmm_topk_count_w1": [
+              "muon",
+              "gmm_topk",
+              "count_w1",
+              "mean"
+            ],
+            "muon_gmm_topk_tail_mae_pp": [
+              "muon",
+              "gmm_topk",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "muon_empirical_section_rate_mae_pp": [
+              "muon",
+              "empirical",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "muon_empirical_count_w1": [
+              "muon",
+              "empirical",
+              "count_w1",
+              "mean"
+            ],
+            "muon_empirical_tail_mae_pp": [
+              "muon",
+              "empirical",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "proton_direct_section_rate_mae_pp": [
+              "proton",
+              "direct",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "proton_direct_count_w1": [
+              "proton",
+              "direct",
+              "count_w1",
+              "mean"
+            ],
+            "proton_direct_tail_mae_pp": [
+              "proton",
+              "direct",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "proton_direct_topk_section_rate_mae_pp": [
+              "proton",
+              "direct_topk",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "proton_direct_topk_count_w1": [
+              "proton",
+              "direct_topk",
+              "count_w1",
+              "mean"
+            ],
+            "proton_direct_topk_tail_mae_pp": [
+              "proton",
+              "direct_topk",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "proton_gmm_section_rate_mae_pp": [
+              "proton",
+              "gmm",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "proton_gmm_count_w1": [
+              "proton",
+              "gmm",
+              "count_w1",
+              "mean"
+            ],
+            "proton_gmm_tail_mae_pp": [
+              "proton",
+              "gmm",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "proton_gmm_topk_section_rate_mae_pp": [
+              "proton",
+              "gmm_topk",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "proton_gmm_topk_count_w1": [
+              "proton",
+              "gmm_topk",
+              "count_w1",
+              "mean"
+            ],
+            "proton_gmm_topk_tail_mae_pp": [
+              "proton",
+              "gmm_topk",
+              "tail_mae_pp",
+              "mean"
+            ],
+            "proton_empirical_section_rate_mae_pp": [
+              "proton",
+              "empirical",
+              "section_rate_mae_pp",
+              "mean"
+            ],
+            "proton_empirical_count_w1": [
+              "proton",
+              "empirical",
+              "count_w1",
+              "mean"
+            ],
+            "proton_empirical_tail_mae_pp": [
+              "proton",
+              "empirical",
+              "tail_mae_pp",
+              "mean"
+            ]
+          }
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/conditional_shape_wgan.py",
+          "sha256": "cc2bdba68ecb538a1114c0d52e78ab02df2fd893f932f1ea74715efae8772af6",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/evaluate_conditional_shapes.py",
+          "sha256": "4108e72d6a461be088967c50d22ff8222e84777e7e16018630321477c2e6b01a",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/evaluate_section_sparsity.py",
+          "sha256": "78a0ff6fd9e776c66bdfdd58715fd222afda5093d84654322c62d538e7b64fcb",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/pipeline/gaussian_projection.py",
+          "sha256": "186df875177c85610e86423d41a06ce9ed82e0572001c4c676f0982c1de306c7",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/pipeline/projection_geometry.py",
+          "sha256": "0dddefa297886eb99e408498ea0c2b217ab40547743adfd6c10f5dee3b5ffeb3",
+          "fields": {}
+        }
+      ]
+    },
+    "res.fhcal.generated-total-replication": {
+      "hypothesis": "hyp.fhcal.generated-total-replication",
+      "status": "verified",
+      "scope": "Три мюонных направления (1–3) и три протонных (1, 3, 5), по 4096 новых архивных строк. Оценки протонных направлений 2 и 4 приведены отдельно.",
+      "code_revision": "BM@N/FHCal/FHCal_GMM/src/replicate_generated_total.py (SHA-256 в sources)",
+      "run": "Новые строки того же транспортного архива. Фиксированы модели, пороги, сгенерированные суммы и карты. Порядок выбора кандидатов и отфильтрованные индексы воспроизводятся по манифестам.",
+      "configuration": "Равный вес направления при наличии 4096 новых строк. Те же модули, калибровочные пороги и прогнозы, что в опыте с суммой от CFM.",
+      "review": "Сверка расчёта и агрегированных чисел с экспортами и итоговыми материалами от 24 ноября.",
+      "sources": [
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/muon_reference.json",
+          "sha256": "338b96ed64f56c671c9c8412ad3a947340bcc7d987fd32d564d83ace46c4e7bd",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/proton_reference.json",
+          "sha256": "666aa60ffb75158b2d0bcb3685a483fd55c291b15780cfa2bdf15fbf4fce751f",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/muon_modules.csv",
+          "sha256": "05b8578a1a2972a03e72847cb1804512cd7003ed08a34aeb886096872eede6ed",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/proton_modules.csv",
+          "sha256": "5dbd510678f585809c7f4783b8dfee6b447e58964c42d8624c8eccc4f831b9a2",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/PROTOCOL.md",
+          "sha256": "ca9ba0845cb486d60378cccd29e776feb42a7bde32324db4b87c3d9a3ff03464",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/muon_directions.csv",
+          "sha256": "2c0863f91066de9b0dc0619766fc5b63840d34bf40948480b8903f4a86a29af1",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/muon_modules.csv",
+          "sha256": "738fcf9376c4aa344a969bfcfd569b1783e90072b45074f9c43b1a81af04fbf8",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/muon_reference.json",
+          "sha256": "173a50e1970e02c7eaed4720ea72dde3456249da896b7c66585e2e1c5c30837d",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/proton_directions.csv",
+          "sha256": "d16367d2b5b4af00630120d08e0aa1644628881c9dc933c6f47c719d6fc7a894",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/proton_modules.csv",
+          "sha256": "daac34f5efaafdf5f7f4235e3ab0df983cea57e46eef42ab203d0df2d596da4e",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/proton_reference.json",
+          "sha256": "f8737c0855a6a6b38fa37da2203921ec42ebf0894f7429aa31510ac59cf6c960",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/summary.json",
+          "sha256": "153991aaf8156cec7ea2723c95fe52506c592b5d9feb369cd366f18a7fba1c82",
+          "fields": {
+            "muon_full_directions": [
+              "muon",
+              "full_directions"
+            ],
+            "muon_records_by_direction": [
+              "muon",
+              "records_by_direction"
+            ],
+            "muon_control_to_control_mae_pp": [
+              "muon",
+              "control_to_control_mae_pp"
+            ],
+            "muon_empirical_model_old_pp": [
+              "muon",
+              "empirical",
+              "model_old_pp"
+            ],
+            "muon_empirical_model_new_pp": [
+              "muon",
+              "empirical",
+              "model_new_pp"
+            ],
+            "muon_empirical_model_new_by_seed_pp": [
+              "muon",
+              "empirical",
+              "model_new_by_seed_pp"
+            ],
+            "muon_direct_model_old_pp": [
+              "muon",
+              "direct",
+              "model_old_pp"
+            ],
+            "muon_direct_model_new_pp": [
+              "muon",
+              "direct",
+              "model_new_pp"
+            ],
+            "muon_direct_model_new_by_seed_pp": [
+              "muon",
+              "direct",
+              "model_new_by_seed_pp"
+            ],
+            "muon_gmm_model_old_pp": [
+              "muon",
+              "gmm",
+              "model_old_pp"
+            ],
+            "muon_gmm_model_new_pp": [
+              "muon",
+              "gmm",
+              "model_new_pp"
+            ],
+            "muon_gmm_model_new_by_seed_pp": [
+              "muon",
+              "gmm",
+              "model_new_by_seed_pp"
+            ],
+            "proton_full_directions": [
+              "proton",
+              "full_directions"
+            ],
+            "proton_records_by_direction": [
+              "proton",
+              "records_by_direction"
+            ],
+            "proton_control_to_control_mae_pp": [
+              "proton",
+              "control_to_control_mae_pp"
+            ],
+            "proton_empirical_model_old_pp": [
+              "proton",
+              "empirical",
+              "model_old_pp"
+            ],
+            "proton_empirical_model_new_pp": [
+              "proton",
+              "empirical",
+              "model_new_pp"
+            ],
+            "proton_empirical_model_new_by_seed_pp": [
+              "proton",
+              "empirical",
+              "model_new_by_seed_pp"
+            ],
+            "proton_direct_model_old_pp": [
+              "proton",
+              "direct",
+              "model_old_pp"
+            ],
+            "proton_direct_model_new_pp": [
+              "proton",
+              "direct",
+              "model_new_pp"
+            ],
+            "proton_direct_model_new_by_seed_pp": [
+              "proton",
+              "direct",
+              "model_new_by_seed_pp"
+            ],
+            "proton_gmm_model_old_pp": [
+              "proton",
+              "gmm",
+              "model_old_pp"
+            ],
+            "proton_gmm_model_new_pp": [
+              "proton",
+              "gmm",
+              "model_new_pp"
+            ],
+            "proton_gmm_model_new_by_seed_pp": [
+              "proton",
+              "gmm",
+              "model_new_by_seed_pp"
+            ]
+          }
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/muon_split.json",
+          "sha256": "1ee6c1636b19a5c8b1df64bd1e18ef1a75841b400028033e84e83d6862481ccf",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/reports/single_particle/proton_split.json",
+          "sha256": "6e87a74af33ae91a6984ed2c58bfb25fd1446d167e8a726cba691e1ff1609080",
+          "fields": {}
+        },
+        {
+          "path": "BM@N/FHCal/FHCal_GMM/src/replicate_generated_total.py",
+          "sha256": "91f5dab610a6a5007e52691956dead081ad800ae5e9e0ed3fe209f9e76fd1786",
+          "fields": {}
+        }
+      ]
+    }
+  },
+  "limitations": {
+    "lim.fhcal.fixed-total-scope": {
+      "text": "Вывод относится к средней ошибке по проверенным направлениям, 6 мюонным и 123 протонным парам «модуль × направление» и фиксированному бюджету обучения. В третьем мюонном направлении GMM даёт меньшую ошибку, чем прямой выход. Парный бутстреп строк условен на фиксированных моделях, пороге и направлениях. Независимость первичных событий требует проверки по ID.",
+      "evidence": [
+        "res.fhcal.fixed-total-q95"
+      ]
+    },
+    "lim.fhcal.generated-total-q95": {
+      "text": "Использован прежний контроль при известной сумме. Интервал условен на обученных моделях, порогах и направлениях. Принадлежность архивных строк независимым событиям требует проверки.",
+      "evidence": [
+        "res.fhcal.generated-total-q95"
+      ]
+    },
+    "lim.fhcal.section-sparsity": {
+      "text": "Точный ноль определён в единицах архивного сигнала. Правило выбора k использует обучающую запись. Три запуска и прежний контроль характеризуют эти модели.",
+      "evidence": [
+        "res.fhcal.section-sparsity"
+      ]
+    },
+    "lim.fhcal.generated-total-replication": {
+      "text": "Новые контрольные строки взяты из тех же архивов. Первичные ID отсутствуют. Два протонных направления с меньшей статистикой вынесены из основного итога. Вариация между двумя контролями характеризует эти две реализации.",
+      "evidence": [
+        "res.fhcal.generated-total-replication"
+      ]
+    }
+  },
+  "claims": {
+    "claim.fhcal.fixed-total-q95": {
+      "title": "При известной сумме наименьшую среднюю ошибку частоты превышения q95 дала эмпирическая форма, затем прямой WGAN-GP, затем WGAN-GP с интегральной GMM.",
+      "evidence": [
+        "res.fhcal.fixed-total-q95"
+      ],
+      "limitations": [
+        "lim.fhcal.fixed-total-scope"
+      ],
+      "scope": "При наблюдаемом суммарном сигнале, на трёх мюонных и пяти протонных направлениях. Порог q95 задан по положительным калибровочным сигналам. Частота учитывает все 4096 контрольных строк направления.",
+      "counterargument": "Генераторы различаются числом параметров и инициализацией. Ранжирование полных методов при данном бюджете допускает иной порядок при другой настройке или составе направлений."
+    },
+    "claim.fhcal.generated-total-q95": {
+      "title": "При сумме от CFM эмпирическая форма дала наименьшую среднюю ошибку модульного q95; прямой WGAN-GP точнее WGAN-GP с GMM в среднем у обоих видов частиц.",
+      "evidence": [
+        "res.fhcal.generated-total-q95"
+      ],
+      "limitations": [
+        "lim.fhcal.generated-total-q95"
+      ],
+      "scope": "4096 генераций и 4096 контрольных строк на направление, 3 направления µ⁺ и 5 направлений p, 6 и 123 пригодные пары модуль–направление. Порог по положительным сигналам калибровки, частота по всем строкам.",
+      "counterargument": "Иной бюджет обучения или иная модель суммы могут изменить ранжирование."
+    },
+    "claim.fhcal.section-sparsity": {
+      "title": "Отбор k секций уменьшил ошибку частот положительного сигнала, но повысил среднюю ошибку модульного q95 у обеих архитектур на обоих видах частиц.",
+      "evidence": [
+        "res.fhcal.section-sparsity"
+      ],
+      "limitations": [
+        "lim.fhcal.section-sparsity"
+      ],
+      "scope": "Наблюдаемые суммы T контрольных записей, 438 чувствительных секций, прежние 3 направления µ⁺ и 5 направлений p, по 4096 строк на направление.",
+      "counterargument": "Сходство распределения числа срабатываний по построению не гарантирует согласия их пространственных корреляций и модульных хвостов."
+    },
+    "claim.fhcal.generated-total-replication": {
+      "title": "При замене контрольных строк в направлениях с 4096 новыми записями наименьшую среднюю ошибку дала эмпирическая форма. Прямой WGAN-GP точнее WGAN-GP с GMM у обоих видов частиц.",
+      "evidence": [
+        "res.fhcal.generated-total-replication"
+      ],
+      "limitations": [
+        "lim.fhcal.generated-total-replication"
+      ],
+      "scope": "Три мюонных направления (1–3) и три протонных (1, 3, 5), по 4096 новых архивных строк. Оценки протонных направлений 2 и 4 приведены отдельно.",
+      "counterargument": "При смене условий движения частиц, моделирования транспорта или повторном обучении ранжирование может измениться."
+    }
+  },
+  "materials": {
+    "mat.fhcal.state": {
+      "path": "BM@N/FHCal/FHCal_GMM/docs/experiment_state.md",
+      "anchor": "Парная проверка формы при известной сумме",
+      "claims": [
+        "claim.fhcal.fixed-total-q95"
+      ]
+    },
+    "mat.fhcal.report": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/conditional_shapes/RESULTS.md",
+      "anchor": "Частота превышения порога модуля",
+      "claims": [
+        "claim.fhcal.fixed-total-q95"
+      ]
+    },
+    "mat.fhcal.slides": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/overview/fhcal.qmd",
+      "anchor": "WGAN-GP и flow matching для отклика FHCal · Результаты WGAN-GP при известной сумме · Выводы по мюонной и протонной выборкам",
+      "claims": [
+        "claim.fhcal.fixed-total-q95"
+      ]
+    },
+    "mat.fhcal.spectra": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/overview/fhcal.qmd",
+      "anchor": "WGAN-GP при заданном T: мюонный спектр в модуле 8 · WGAN-GP при заданном T: протонный спектр в модуле 26",
+      "claims": [
+        "claim.fhcal.fixed-total-q95"
+      ]
+    },
+    "mat.fhcal.generated-total-q95.report": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total/RESULTS.md",
+      "anchor": "Генерация суммы и пространственного отклика FHCal для мюонов и протонов",
+      "claims": [
+        "claim.fhcal.generated-total-q95"
+      ]
+    },
+    "mat.fhcal.generated-total-q95.state": {
+      "path": "BM@N/FHCal/FHCal_GMM/docs/experiment_state.md",
+      "anchor": "Генерация суммы и секционных долей",
+      "claims": [
+        "claim.fhcal.generated-total-q95"
+      ]
+    },
+    "mat.fhcal.generated-total-q95.plan": {
+      "path": "BM@N/FHCal/FHCal_GMM/docs/tail_experiment_plan.md",
+      "anchor": "Проверка на мюонной и протонной выборках, 24 ноября",
+      "claims": [
+        "claim.fhcal.generated-total-q95"
+      ]
+    },
+    "mat.fhcal.generated-total-q95.slides": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/overview/fhcal.qmd",
+      "anchor": "Результаты WGAN-GP при сумме из CFM · WGAN-GP и flow matching для отклика FHCal · Выводы по мюонной и протонной выборкам",
+      "claims": [
+        "claim.fhcal.generated-total-q95"
+      ]
+    },
+    "mat.fhcal.section-sparsity.report": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/section_sparsity/RESULTS.md",
+      "anchor": "Разреженность секционного отклика при заданной сумме",
+      "claims": [
+        "claim.fhcal.section-sparsity"
+      ]
+    },
+    "mat.fhcal.section-sparsity.state": {
+      "path": "BM@N/FHCal/FHCal_GMM/docs/experiment_state.md",
+      "anchor": "Отбор секций при известной сумме",
+      "claims": [
+        "claim.fhcal.section-sparsity"
+      ]
+    },
+    "mat.fhcal.section-sparsity.plan": {
+      "path": "BM@N/FHCal/FHCal_GMM/docs/tail_experiment_plan.md",
+      "anchor": "Проверка на мюонной и протонной выборках, 24 ноября",
+      "claims": [
+        "claim.fhcal.section-sparsity"
+      ]
+    },
+    "mat.fhcal.section-sparsity.slides": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/overview/fhcal.qmd",
+      "anchor": "Как отбор секций влияет на ошибки WGAN-GP · Выводы по мюонной и протонной выборкам",
+      "claims": [
+        "claim.fhcal.section-sparsity"
+      ]
+    },
+    "mat.fhcal.generated-total-replication.report": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/generated_total_replication/RESULTS.md",
+      "anchor": "Генерация суммы и формы на втором транспортном контроле",
+      "claims": [
+        "claim.fhcal.generated-total-replication"
+      ]
+    },
+    "mat.fhcal.generated-total-replication.state": {
+      "path": "BM@N/FHCal/FHCal_GMM/docs/experiment_state.md",
+      "anchor": "Повторная проверка на новых строках архива",
+      "claims": [
+        "claim.fhcal.generated-total-replication"
+      ]
+    },
+    "mat.fhcal.generated-total-replication.plan": {
+      "path": "BM@N/FHCal/FHCal_GMM/docs/tail_experiment_plan.md",
+      "anchor": "Проверка на мюонной и протонной выборках, 24 ноября",
+      "claims": [
+        "claim.fhcal.generated-total-replication"
+      ]
+    },
+    "mat.fhcal.generated-total-replication.slides": {
+      "path": "BM@N/FHCal/FHCal_GMM/reports/overview/fhcal.qmd",
+      "anchor": "Результаты WGAN-GP на новых контрольных записях · WGAN-GP и flow matching для отклика FHCal · Выводы по мюонной и протонной выборкам",
+      "claims": [
+        "claim.fhcal.generated-total-replication"
+      ]
+    }
+  }
+}

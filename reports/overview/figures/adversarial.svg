@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="322" viewBox="0 0 1200 322">
+<title>Conditional WGAN with a differentiable Gaussian mixture generator</title>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 z" fill="#607586"/></marker></defs>
+<text x="6" y="28" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#253b4d">Generator  ·  positive total signal T and recorded direction c</text>
+<rect x="6" y="48" width="174" height="97" rx="7" fill="#f7f8fa" stroke="#c1c9d2" stroke-width="1.5"/>
+<text x="22" y="79" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#21364a">Inputs</text>
+<text x="22" y="109" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Noise z</text>
+<text x="22" y="135" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Fixed (T, c)</text>
+<path d="M181 96 H208" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="212" y="48" width="247" height="97" rx="7" fill="#eef3fa" stroke="#8ca8ca" stroke-width="1.5"/>
+<text x="228" y="79" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#153f6c">Generator MLP</text>
+<text x="228" y="109" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Mixture weights,</text>
+<text x="228" y="135" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">centres and widths</text>
+<path d="M460 96 H488" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="492" y="48" width="258" height="97" rx="7" fill="#edf6f3" stroke="#8bb3a6" stroke-width="1.5"/>
+<text x="508" y="79" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#1c5c4b">Section integrals</text>
+<text x="508" y="109" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Normalize on the</text>
+<text x="508" y="135" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">438 active sections</text>
+<path d="M751 96 H779" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="783" y="48" width="233" height="97" rx="7" fill="#edf6f3" stroke="#8bb3a6" stroke-width="1.5"/>
+<text x="799" y="79" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#1c5c4b">Generated map</text>
+<text x="799" y="109" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Section fractions f[s]</text>
+<text x="799" y="135" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Signal E[s] = T f[s]</text>
+<path d="M1017 96 H1091 V187" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="6" y="198" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#253b4d">Critic training  ·  one score per input map</text>
+<rect x="6" y="217" width="400" height="85" rx="7" fill="#f7f8fa" stroke="#c1c9d2" stroke-width="1.5"/>
+<text x="22" y="248" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#21364a">Transport MC</text>
+<text x="22" y="278" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Section fractions at the same (T, c)</text>
+<path d="M407 260 H897" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="493" y="244" font-family="Arial, sans-serif" font-size="19" font-weight="normal" fill="#536577">Real map</text>
+<rect x="901" y="191" width="293" height="111" rx="7" fill="#f4f1fa" stroke="#b3a3cc" stroke-width="1.5"/>
+<text x="917" y="222" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#534174">Shared critic MLP</text>
+<text x="917" y="252" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">438 fractions, log T and c</text>
+<text x="917" y="278" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Output: one scalar score</text>
+</svg>

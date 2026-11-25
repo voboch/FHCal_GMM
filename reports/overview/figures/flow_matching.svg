@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="322" viewBox="0 0 1200 322">
+<title>Conditional flow matching for positive total signal</title>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 z" fill="#607586"/></marker></defs>
+<text x="6" y="27" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#253b4d">Training  ·  one velocity field per particle species</text>
+<rect x="6" y="43" width="280" height="95" rx="7" fill="#f7f8fa" stroke="#c1c9d2" stroke-width="1.5"/>
+<text x="22" y="74" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#21364a">Sample a training pair</text>
+<text x="22" y="104" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">y = standardized log T</text>
+<text x="22" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">z ~ N(0, 1),  t ~ U(0, 1)</text>
+<path d="M287 91 H318" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="322" y="43" width="258" height="95" rx="7" fill="#f7f8fa" stroke="#c1c9d2" stroke-width="1.5"/>
+<text x="338" y="74" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#21364a">Interpolate</text>
+<text x="338" y="104" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">x(t) = (1 − t)z + ty</text>
+<text x="338" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Target velocity: y − z</text>
+<path d="M581 91 H612" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="616" y="43" width="268" height="95" rx="7" fill="#eef3fa" stroke="#8ca8ca" stroke-width="1.5"/>
+<text x="632" y="74" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#153f6c">Velocity network</text>
+<text x="632" y="104" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Inputs: x(t), t, direction c</text>
+<text x="632" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">2 hidden layers, 64 units</text>
+<path d="M885 91 H916" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="920" y="43" width="274" height="95" rx="7" fill="#eef3fa" stroke="#8ca8ca" stroke-width="1.5"/>
+<text x="936" y="74" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#153f6c">Fit the velocity</text>
+<text x="936" y="104" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Minimize mean squared</text>
+<text x="936" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">error relative to y − z</text>
+<text x="6" y="192" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#253b4d">Generation  ·  positive-signal branch</text>
+<rect x="6" y="208" width="249" height="98" rx="7" fill="#f7f8fa" stroke="#c1c9d2" stroke-width="1.5"/>
+<text x="22" y="239" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#21364a">Sample noise</text>
+<text x="22" y="269" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">x(0) ~ N(0, 1)</text>
+<text x="22" y="295" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Fix direction c</text>
+<path d="M256 257 H286" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="290" y="208" width="276" height="98" rx="7" fill="#eef3fa" stroke="#8ca8ca" stroke-width="1.5"/>
+<text x="306" y="239" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#153f6c">Integrate dx/dt = vθ</text>
+<text x="306" y="269" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">48 midpoint steps</text>
+<text x="306" y="295" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">from t = 0 to t = 1</text>
+<path d="M567 257 H597" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="601" y="208" width="265" height="98" rx="7" fill="#eef3fa" stroke="#8ca8ca" stroke-width="1.5"/>
+<text x="617" y="239" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#153f6c">Recover total T</text>
+<text x="617" y="269" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Undo standardization,</text>
+<text x="617" y="295" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">then exponentiate</text>
+<path d="M867 257 H897" fill="none" stroke="#607586" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="901" y="208" width="293" height="98" rx="7" fill="#edf6f3" stroke="#8bb3a6" stroke-width="1.5"/>
+<text x="917" y="239" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#1c5c4b">Sample a shower shape</text>
+<text x="917" y="269" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">Pick 1 of 16 neighbours</text>
+<text x="917" y="295" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#253b4d">in log T; scale fractions by T</text>
+</svg>

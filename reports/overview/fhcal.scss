@@ -1,0 +1,16 @@
+/*-- scss:rules --*/
+.reveal .slides {text-align:left;}
+.reveal .slides h2 {text-align:left;}
+.reveal .slide .context {color:#4e5155;font-size:30px;margin:0 0 20px;}
+.reveal .slide .takeaway {border-left:6px solid #374b9b;padding:7px 22px;margin:24px 0 8px;color:#0f2d69;font-weight:600;}
+.reveal .slide .takeaway p,.reveal .slide .context p {margin:0;}
+.reveal .slide .slide-body p {margin-top:.36em;margin-bottom:.36em;}
+.reveal .slide .slide-body > table {width:100%;max-width:100%;font-size:32px;line-height:1.15;margin:18px 0;}
+.reveal .slide table thead {color:#0f2d69;background:#f1f3f7;}
+.reveal .slide table :is(td,th) {padding:12px 17px;}
+.reveal .slide table :is(td,th):first-child {padding-left:14px;}
+.reveal .slide figure {margin:0 auto;}
+.reveal .slide .slide-body img {display:block;max-width:100%;width:100%;height:auto;margin:0 auto;}
+.reveal .slide .figure {text-align:center;}
+.reveal .slide .figure p {margin:0;}
+.reveal .slide .context + .figure {margin-top:14px;}

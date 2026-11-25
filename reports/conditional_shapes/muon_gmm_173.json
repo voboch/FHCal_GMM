@@ -1,0 +1,37 @@
+{
+  "species": "muon",
+  "kind": "gmm",
+  "seed": 173,
+  "steps": 800,
+  "critic_steps": 2400,
+  "seconds": 8.280303874984384,
+  "generator_parameters": 14044,
+  "critic_parameters": 51937,
+  "history": [
+    {
+      "step": 200,
+      "critic_gap": -0.003990963101387024,
+      "gp": 0.0005429267766885459,
+      "generator_loss": -0.03434792160987854
+    },
+    {
+      "step": 400,
+      "critic_gap": 0.008446184918284416,
+      "gp": 0.0007703850860707462,
+      "generator_loss": 0.024091169238090515
+    },
+    {
+      "step": 600,
+      "critic_gap": 0.0033473744988441467,
+      "gp": 0.0004201153351459652,
+      "generator_loss": 0.0826132670044899
+    },
+    {
+      "step": 800,
+      "critic_gap": 0.008655041456222534,
+      "gp": 0.000184969772817567,
+      "generator_loss": 0.14358972012996674
+    }
+  ],
+  "torch_version": "2.9.1"
+}

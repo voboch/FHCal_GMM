@@ -1,0 +1,56 @@
+{
+  "seed": 61123,
+  "directions": 5,
+  "train_rows_per_direction": 4096,
+  "positive_counts": [
+    4096,
+    4096,
+    4096,
+    4096,
+    4096
+  ],
+  "zero_probability": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "log_mean": [
+    3.2234473076803845,
+    3.22558011317808,
+    2.98386241892779,
+    3.224791573059647,
+    3.1733206178949858
+  ],
+  "log_scale": [
+    0.34102487295887585,
+    0.34239538172764805,
+    0.4776662949793703,
+    0.3403149222522994,
+    0.3790929397260617
+  ],
+  "hidden_units": 64,
+  "updates": 1800,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "ode_midpoint_steps": 48,
+  "neighbors": 16,
+  "samples_per_direction": 8192,
+  "train_loss_every_300_steps": [
+    1.3918139934539795,
+    1.495100736618042,
+    1.9460142850875854,
+    1.4123258590698242,
+    1.3898859024047852,
+    1.7708075046539307
+  ],
+  "cpu_threads": 1,
+  "torch_version": "2.9.1",
+  "numpy_version": "2.4.4",
+  "shape_distance": "absolute log total signal",
+  "train_sha256_float64": "2e328bdd2645985ce3f685bfeb67bba819476e1306f00df6adf5d7b66f6870ee",
+  "source_sha256": "b401492990b90b56d14642cf05f9673c35e5d2427ecbdae18e1125a12b1dd87a",
+  "checkpoint": "conditional_tail_flow.pt",
+  "checkpoint_sha256": "0baf05bf5506ee95aa8c23d78c32b9718eb1db8596b8d9307c9aa316697e53ba"
+}

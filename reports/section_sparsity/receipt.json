@@ -1,0 +1,42 @@
+{
+  "python": "3.13.9",
+  "torch": "2.9.1",
+  "numpy": "2.4.4",
+  "scipy": "1.17.0",
+  "seeds": [
+    173,
+    283,
+    397
+  ],
+  "neighbours": 16,
+  "geometry_sha256": "3f577faabdfef84e815760830ce4e716d7894acc26fa90f708127910a91dfdba",
+  "input_sha256": {
+    "src/evaluate_section_sparsity.py": "78a0ff6fd9e776c66bdfdd58715fd222afda5093d84654322c62d538e7b64fcb",
+    "reports/section_sparsity/PROTOCOL.md": "44f277c30c4c8cc2d7e3ff27293da2e269812b9709d20036739bf415a1aacba3",
+    "reports/conditional_shapes/summary.json": "c5a5d34a4abc29eb56ac0c0996d85667703d4cc17f75118ed3352d5d112f20f5",
+    "src/conditional_shape_wgan.py": "cc2bdba68ecb538a1114c0d52e78ab02df2fd893f932f1ea74715efae8772af6",
+    "src/evaluate_conditional_shapes.py": "4108e72d6a461be088967c50d22ff8222e84777e7e16018630321477c2e6b01a",
+    "src/pipeline/gaussian_projection.py": "186df875177c85610e86423d41a06ce9ed82e0572001c4c676f0982c1de306c7",
+    "src/pipeline/projection_geometry.py": "0dddefa297886eb99e408498ea0c2b217ab40547743adfd6c10f5dee3b5ffeb3",
+    "outputs/conditional_shapes/muon_sections.npz": "a614e251a6430aa67389afd466e3de94db5865fe83c8a705f51e82e78db346cc",
+    "reports/conditional_shapes/muon_reference.json": "338b96ed64f56c671c9c8412ad3a947340bcc7d987fd32d564d83ace46c4e7bd",
+    "reports/conditional_shapes/models/muon_direct_173.pt": "21bfa441a8ceb6716186b71b860c6fa75998dbf6350926990c232bda066c4ddf",
+    "reports/conditional_shapes/models/muon_direct_283.pt": "babd599096ffb759031f0367baea1565e493a9c2ccb4f2ecf57fb953def719ce",
+    "reports/conditional_shapes/models/muon_direct_397.pt": "8b0f4b6ed115babb1f125d5a73d0e696158171a282ab7c2d247a89033ab1a6aa",
+    "reports/conditional_shapes/models/muon_gmm_173.pt": "858e0cb48ffd34ededa72ccbaa7bbc0e7951cc1a3968bbe1615af9ffff328236",
+    "reports/conditional_shapes/models/muon_gmm_283.pt": "cf8a3010bdeaf3fce6e9104762c2d1a30640976c5f14b4cbb99c4f2cb6793924",
+    "reports/conditional_shapes/models/muon_gmm_397.pt": "f895cc730ad98c1e457b24015b725a8ac1c30583b9359e332af24f4e55b24fa1",
+    "outputs/conditional_shapes/proton_sections.npz": "c8926b8b6cfde5a4919cf88d808f656018fa6e3e9fb78f229651482c031ae61a",
+    "reports/conditional_shapes/proton_reference.json": "666aa60ffb75158b2d0bcb3685a483fd55c291b15780cfa2bdf15fbf4fce751f",
+    "reports/conditional_shapes/models/proton_direct_173.pt": "c99ac41b4180f313157e78d784c128d636f3bc18c482f12dffb81411eccb437b",
+    "reports/conditional_shapes/models/proton_direct_283.pt": "43e08dc0f71006a4a27248b9d0e6d34cc72eeae057b8b0bd961fec6c87ee95bf",
+    "reports/conditional_shapes/models/proton_direct_397.pt": "19586a15980eaa0e50c06e83fb1e30bc85084ffd714f3249bd05b16f8392784f",
+    "reports/conditional_shapes/models/proton_gmm_173.pt": "8b29647d80a35048af574305423d6930e3701427dbcb8fcd256767ed2f3615e9",
+    "reports/conditional_shapes/models/proton_gmm_283.pt": "32db1481494de60df4cb9043f68bf953fb1f21874cd2ce74a0b8c12b98481970",
+    "reports/conditional_shapes/models/proton_gmm_397.pt": "a153100a123322f647933166d52644122a6619bd794ee86dc621fa514cfee3d3"
+  },
+  "export_sha256": {
+    "summary.json": "1efb64792ddc4cd6a4c581709fbfe761ef89f342fd2d0d6113f9c85bd5f7d006",
+    "directions.csv": "769f311fb5520079aa25963b5e42ae46e941aa832a086745193a12fcb06e5bac"
+  }
+}

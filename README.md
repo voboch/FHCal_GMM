@@ -32,6 +32,8 @@ python inference.py -cn=proton_inference inferencer.direction=3 inferencer.event
 
 ## Результаты
 
+[Проверка источников и поиск затронутых материалов](research/README.md).
+
 На 1 280 контрольных строках среднее число ненулевых секций — 25,74 в
 симуляции и 25,66 у стохастического декодера. Кодирование гладкой смесью
 снижает число секций с долей от 1 % полного сигнала с 17,26 до 13,76
@@ -40,6 +42,8 @@ python inference.py -cn=proton_inference inferencer.direction=3 inferencer.event
 
 [Единый PDF](reports/FHCal_Reports_Current.pdf) · [Отчёты с графиками](reports/README.md) · [протокол](docs/experiment_protocol.md) ·
 [данные и полный пересчёт](PIPELINE.md).
+
+[Проверка хвостов и план сравнения с flow matching и WGAN-GP](docs/tail_experiment_plan.md) · [Атлас всех модулей и слоёв](reports/tails/proton_tail_atlas.pdf).
 
 ## Структура проекта
 

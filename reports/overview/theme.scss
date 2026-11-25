@@ -1,0 +1,97 @@
+/*-- scss:defaults --*/
+// HSE University. https://portal.hse.ru/colours
+$hse-navy: #0f2d69;
+$hse-blue: #374b9b;
+$hse-gray: #939598;
+$hse-gray-light: #c7c8ca;
+$hse-gray-pale: #e6e7e8;
+$deck-muted-text: #4e5155;
+
+$font-family-sans-serif: "Source Sans 3", Arial, sans-serif;
+$body-bg: #fff;
+$body-color: #171717;
+$presentation-heading-color: $hse-navy;
+$presentation-heading-font-weight: 700;
+$presentation-heading-line-height: 1.08;
+$presentation-font-size-root: 36px;
+$presentation-line-height: 1.28;
+$presentation-h2-font-size: 46px;
+$link-color: $hse-blue;
+
+/*-- scss:rules --*/
+.reveal,
+.reveal h2 { font-family: "Source Sans 3", Arial, sans-serif; }
+
+.reveal-viewport { background: #fff; }
+
+.reveal .slides section.slide:not(.deck-cover) > h2 {
+  position: relative;
+  margin: 0 0 40px;
+  min-height: 48px;
+  font-size: 46px;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.reveal .slides section.slide:not(.deck-cover) > h2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -14px;
+  left: 0;
+  border-bottom: 2px solid $hse-gray-pale;
+}
+
+.reveal .slide p { max-width: 1360px; }
+.reveal .slide .math.display { margin: .26em 0 .4em; }
+.reveal .slide-number {
+  right: 36px;
+  bottom: 22px;
+  color: $deck-muted-text;
+  background: transparent;
+}
+
+.reveal .slides section.slide.deck-cover {
+  box-sizing: border-box;
+  min-height: 900px;
+  --cover-padding: 110px 142px;
+  padding: var(--cover-padding);
+  text-align: left;
+}
+
+.reveal .slides section.slide.deck-cover.present,
+.reveal .slides .pdf-page section.slide.deck-cover {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reveal .slides section.slide.deck-cover > h2 {
+  max-width: 1250px;
+  margin: 0 0 38px;
+  color: $presentation-heading-color;
+  font-size: 86px;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.reveal .slide.deck-cover > h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  margin-bottom: 34px;
+  border-top: 5px solid $hse-navy;
+}
+
+.reveal .slide.deck-cover > p {
+  max-width: 1160px;
+  margin: 0;
+  color: $deck-muted-text;
+  font-size: 43px;
+}
+
+@media print {
+  .reveal .slides .pdf-page section.slide.deck-cover {
+    padding: var(--cover-padding) !important;
+  }
+}

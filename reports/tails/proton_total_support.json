@@ -1,0 +1,48 @@
+{
+  "source_sha256": "3104573217991bd1b5be022f6cca168da1c88a9daec8b9d283539c47ee0ae130",
+  "bank_sha256": "959a317882ee68d0431e1ee6efa8ada62a70011fa93bb9d5c66b312ccca29fc6",
+  "geometry_sha256": "3f577faabdfef84e815760830ce4e716d7894acc26fa90f708127910a91dfdba",
+  "decoder_seed": 14719,
+  "groups": [
+    {
+      "direction": 1,
+      "bank_max": 40.920960031449795,
+      "reference_max": 50.159338070079684,
+      "reference_above": 8,
+      "reference_rows": 256,
+      "numerical_guard": 1e-05
+    },
+    {
+      "direction": 2,
+      "bank_max": 40.507794006727636,
+      "reference_max": 60.46812720224261,
+      "reference_above": 7,
+      "reference_rows": 256,
+      "numerical_guard": 1e-05
+    },
+    {
+      "direction": 3,
+      "bank_max": 38.030267180874944,
+      "reference_max": 42.00637710094452,
+      "reference_above": 1,
+      "reference_rows": 256,
+      "numerical_guard": 1e-05
+    },
+    {
+      "direction": 4,
+      "bank_max": 34.12478939816356,
+      "reference_max": 54.580909717828035,
+      "reference_above": 37,
+      "reference_rows": 256,
+      "numerical_guard": 1e-05
+    },
+    {
+      "direction": 5,
+      "bank_max": 35.06802908331156,
+      "reference_max": 53.89351106248796,
+      "reference_above": 18,
+      "reference_rows": 256,
+      "numerical_guard": 1e-05
+    }
+  ]
+}

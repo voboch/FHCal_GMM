@@ -1,0 +1,432 @@
+[
+  {
+    "species": "muon",
+    "directional_control": [
+      {
+        "direction": 1,
+        "eligible_modules": 2,
+        "correct_direction": {
+          "w1_total": 0.1457069954570541,
+          "module_tail_all_mae_pp": 0.9033203125,
+          "module_positive_mass_mae_pp": 0.06736472800925926
+        },
+        "marginalized_direction": {
+          "w1_total": 1.3460344149939218,
+          "module_tail_all_mae_pp": 2.8889973958333335,
+          "module_positive_mass_mae_pp": 4.988230010609569
+        }
+      },
+      {
+        "direction": 2,
+        "eligible_modules": 2,
+        "correct_direction": {
+          "w1_total": 0.08041222649459132,
+          "module_tail_all_mae_pp": 0.927734375,
+          "module_positive_mass_mae_pp": 0.03955982349537037
+        },
+        "marginalized_direction": {
+          "w1_total": 1.7794321777221898,
+          "module_tail_all_mae_pp": 2.9134114583333335,
+          "module_positive_mass_mae_pp": 4.944525824652779
+        }
+      },
+      {
+        "direction": 3,
+        "eligible_modules": 2,
+        "correct_direction": {
+          "w1_total": 0.2545183425712823,
+          "module_tail_all_mae_pp": 0.701904296875,
+          "module_positive_mass_mae_pp": 0.07866753472222222
+        },
+        "marginalized_direction": {
+          "w1_total": 0.25231678282728653,
+          "module_tail_all_mae_pp": 2.6387532552083335,
+          "module_positive_mass_mae_pp": 4.748158396026235
+        }
+      }
+    ],
+    "shared_threshold_directional_effects": [
+      {
+        "observable": "\u0414\u0435\u0442\u0435\u043a\u0442\u043e\u0440",
+        "anchor": 1,
+        "direction": 2,
+        "threshold": 13.805791601538658,
+        "counts": [
+          36,
+          543,
+          17,
+          218
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -4.9072265625,
+        "model_effect_pp": -6.18896484375,
+        "difference_ci95_pp": [
+          -3.322661653707403,
+          0.752135425830365
+        ]
+      },
+      {
+        "observable": "\u0414\u0435\u0442\u0435\u043a\u0442\u043e\u0440",
+        "anchor": 1,
+        "direction": 3,
+        "threshold": 13.805791601538658,
+        "counts": [
+          316,
+          543,
+          99,
+          218
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -2.9052734375,
+        "model_effect_pp": -2.77099609375,
+        "difference_ci95_pp": [
+          -2.5994659694075835,
+          2.863900867133947
+        ]
+      },
+      {
+        "observable": "\u041c\u043e\u0434\u0443\u043b\u044c 16",
+        "anchor": 1,
+        "direction": 2,
+        "threshold": 9.754659429192543,
+        "counts": [
+          0,
+          540,
+          0,
+          210
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -5.126953125,
+        "model_effect_pp": -6.591796875,
+        "difference_ci95_pp": [
+          -3.1268997140020267,
+          0.1874160493614857
+        ]
+      },
+      {
+        "observable": "\u041c\u043e\u0434\u0443\u043b\u044c 16",
+        "anchor": 1,
+        "direction": 3,
+        "threshold": 9.754659429192543,
+        "counts": [
+          0,
+          540,
+          0,
+          210
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -5.126953125,
+        "model_effect_pp": -6.591796875,
+        "difference_ci95_pp": [
+          -3.1268997140020267,
+          0.1874160493614857
+        ]
+      }
+    ],
+    "historical_muon_line_shape": {
+      "module": 16,
+      "direction": 1,
+      "threshold": 9.754659429192543,
+      "positive": 4096,
+      "above": 210,
+      "positive_tail": 0.05126953125,
+      "reference_ci95": [
+        0.04471548226322052,
+        0.05847256423508775
+      ],
+      "fixed_positive_models": {
+        "normal": 0.04514142405873767,
+        "landau_gauss": 0.05019562710743075
+      }
+    }
+  },
+  {
+    "species": "proton",
+    "directional_control": [
+      {
+        "direction": 1,
+        "eligible_modules": 26,
+        "correct_direction": {
+          "w1_total": 0.5231695376242055,
+          "module_tail_all_mae_pp": 0.29625525841346156,
+          "module_positive_mass_mae_pp": 0.44533058449074076
+        },
+        "marginalized_direction": {
+          "w1_total": 0.9413636389208909,
+          "module_tail_all_mae_pp": 1.8150916466346152,
+          "module_positive_mass_mae_pp": 21.39015480324074
+        }
+      },
+      {
+        "direction": 2,
+        "eligible_modules": 27,
+        "correct_direction": {
+          "w1_total": 0.33656615428737574,
+          "module_tail_all_mae_pp": 0.2712673611111111,
+          "module_positive_mass_mae_pp": 0.5382396556712963
+        },
+        "marginalized_direction": {
+          "w1_total": 0.9809024046109166,
+          "module_tail_all_mae_pp": 2.5127495659722223,
+          "module_positive_mass_mae_pp": 21.372974537037038
+        }
+      },
+      {
+        "direction": 3,
+        "eligible_modules": 19,
+        "correct_direction": {
+          "w1_total": 0.6815888252500426,
+          "module_tail_all_mae_pp": 0.36492598684210525,
+          "module_positive_mass_mae_pp": 0.5420826099537037
+        },
+        "marginalized_direction": {
+          "w1_total": 3.975358493352929,
+          "module_tail_all_mae_pp": 5.220626027960526,
+          "module_positive_mass_mae_pp": 22.83673321759259
+        }
+      },
+      {
+        "direction": 4,
+        "eligible_modules": 29,
+        "correct_direction": {
+          "w1_total": 0.46857376651444715,
+          "module_tail_all_mae_pp": 0.2773942618534483,
+          "module_positive_mass_mae_pp": 0.57373046875
+        },
+        "marginalized_direction": {
+          "w1_total": 1.0785746917684107,
+          "module_tail_all_mae_pp": 3.08349609375,
+          "module_positive_mass_mae_pp": 20.466670283564813
+        }
+      },
+      {
+        "direction": 5,
+        "eligible_modules": 22,
+        "correct_direction": {
+          "w1_total": 0.5114270526008855,
+          "module_tail_all_mae_pp": 0.34068714488636365,
+          "module_positive_mass_mae_pp": 0.4767523871527778
+        },
+        "marginalized_direction": {
+          "w1_total": 0.25871067225229416,
+          "module_tail_all_mae_pp": 2.5330699573863633,
+          "module_positive_mass_mae_pp": 21.42107928240741
+        }
+      }
+    ],
+    "shared_threshold_directional_effects": [
+      {
+        "observable": "\u0414\u0435\u0442\u0435\u043a\u0442\u043e\u0440",
+        "anchor": 3,
+        "direction": 1,
+        "threshold": 33.16316977189854,
+        "counts": [
+          1019,
+          447,
+          626,
+          209
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": 10.1806640625,
+        "model_effect_pp": 6.982421875,
+        "difference_ci95_pp": [
+          -7.027873345365196,
+          0.6467761107838408
+        ]
+      },
+      {
+        "observable": "\u0414\u0435\u0442\u0435\u043a\u0442\u043e\u0440",
+        "anchor": 3,
+        "direction": 2,
+        "threshold": 33.16316977189854,
+        "counts": [
+          1032,
+          447,
+          595,
+          209
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": 9.423828125,
+        "model_effect_pp": 7.14111328125,
+        "difference_ci95_pp": [
+          -6.089163285214017,
+          1.5372446731495613
+        ]
+      },
+      {
+        "observable": "\u0414\u0435\u0442\u0435\u043a\u0442\u043e\u0440",
+        "anchor": 3,
+        "direction": 4,
+        "threshold": 33.16316977189854,
+        "counts": [
+          1196,
+          447,
+          627,
+          209
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": 10.205078125,
+        "model_effect_pp": 9.14306640625,
+        "difference_ci95_pp": [
+          -4.957386389175373,
+          2.846390726511398
+        ]
+      },
+      {
+        "observable": "\u0414\u0435\u0442\u0435\u043a\u0442\u043e\u0440",
+        "anchor": 3,
+        "direction": 5,
+        "threshold": 33.16316977189854,
+        "counts": [
+          769,
+          447,
+          474,
+          209
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": 6.4697265625,
+        "model_effect_pp": 3.9306640625,
+        "difference_ci95_pp": [
+          -6.1096554512425465,
+          1.0419916796158577
+        ]
+      },
+      {
+        "observable": "\u041c\u043e\u0434\u0443\u043b\u044c 26",
+        "anchor": 3,
+        "direction": 1,
+        "threshold": 7.554630886390805,
+        "counts": [
+          0,
+          351,
+          0,
+          184
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -4.4921875,
+        "model_effect_pp": -4.28466796875,
+        "difference_ci95_pp": [
+          -1.2770600461512058,
+          1.6811466699157922
+        ]
+      },
+      {
+        "observable": "\u041c\u043e\u0434\u0443\u043b\u044c 26",
+        "anchor": 3,
+        "direction": 2,
+        "threshold": 7.554630886390805,
+        "counts": [
+          0,
+          351,
+          0,
+          184
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -4.4921875,
+        "model_effect_pp": -4.28466796875,
+        "difference_ci95_pp": [
+          -1.2770600461512058,
+          1.6811466699157922
+        ]
+      },
+      {
+        "observable": "\u041c\u043e\u0434\u0443\u043b\u044c 26",
+        "anchor": 3,
+        "direction": 4,
+        "threshold": 7.554630886390805,
+        "counts": [
+          0,
+          351,
+          1,
+          184
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -4.4677734375,
+        "model_effect_pp": -4.28466796875,
+        "difference_ci95_pp": [
+          -1.328304922971444,
+          1.6809936033089743
+        ]
+      },
+      {
+        "observable": "\u041c\u043e\u0434\u0443\u043b\u044c 26",
+        "anchor": 3,
+        "direction": 5,
+        "threshold": 7.554630886390805,
+        "counts": [
+          0,
+          351,
+          0,
+          184
+        ],
+        "sample_sizes": [
+          8192,
+          8192,
+          4096,
+          4096
+        ],
+        "reference_effect_pp": -4.4921875,
+        "model_effect_pp": -4.28466796875,
+        "difference_ci95_pp": [
+          -1.2770600461512058,
+          1.6811466699157922
+        ]
+      }
+    ]
+  }
+]

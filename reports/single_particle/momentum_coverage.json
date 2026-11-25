@@ -1,0 +1,897 @@
+{
+  "discrete_proton_conditions_across_files": [
+    {
+      "unit_vector": [
+        -0.207395,
+        0.0,
+        0.978257
+      ],
+      "abs_p": [
+        5.0
+      ]
+    },
+    {
+      "unit_vector": [
+        -0.205687,
+        0.0,
+        0.978618
+      ],
+      "abs_p": [
+        5.0
+      ]
+    },
+    {
+      "unit_vector": [
+        -0.115504,
+        0.145298,
+        0.982623
+      ],
+      "abs_p": [
+        2.0
+      ]
+    },
+    {
+      "unit_vector": [
+        -0.031998,
+        0.146137,
+        0.988747
+      ],
+      "abs_p": [
+        5.0
+      ]
+    },
+    {
+      "unit_vector": [
+        0.087334,
+        0.0,
+        0.996179
+      ],
+      "abs_p": [
+        5.0
+      ]
+    },
+    {
+      "unit_vector": [
+        0.124125,
+        0.0,
+        0.992267
+      ],
+      "abs_p": [
+        5.0
+      ]
+    }
+  ],
+  "source_commit": "200744156f5eaeeca9da503b53232febf3186cca",
+  "source_git_blobs": {
+    "fhcal_data.npz": "da694b42afcea4ced533cf23d3d46b8986bdcde4",
+    "fhcal_data3.npz": "33b088e357ad0a93a497ba604f4c6dbc13e93aa1",
+    "fhcal_data_side_modules81619.zip": "f4c7155b857b8993642fae052854992298451827",
+    "fhcal_data_side_modules81619_180.zip": "4257fefbef843a29be628b55381d2a18a5750eec",
+    "fhcal_data_side_modules81619_new.zip": "7a5a0b4cb3a67d75d109344f24c8d954d5d11cec",
+    "fhcal_train_90000.zip": "dabb866674611fa47b65f5b309a821dbb2bd8add",
+    "fhcal_data_muons_81619.zip": "dabeffa422b7c34e5d57a3e4a94e85cd21adedf3",
+    "fhcal_data_muons_81619_large.zip": "0faea481a1a5ef75892a872d10bd1c7c416c5117"
+  },
+  "geometry_sha256": "3f577faabdfef84e815760830ce4e716d7894acc26fa90f708127910a91dfdba",
+  "evaluator_sha256": "af8f46e41de4aa94d41bc14463553ad32a184fc77a89500a39a2b4d9fc96a48c",
+  "versions": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.0",
+    "sklearn": "1.9.1"
+  },
+  "target_sum_tolerance": {
+    "rtol": 1e-05,
+    "atol": 1e-06
+  },
+  "archives": {
+    "fhcal_data.npz": {
+      "n": 12184,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        2212
+      ],
+      "section_shape": [
+        7,
+        9,
+        10
+      ],
+      "n_unique_vertices": 12184,
+      "n_unique_momenta": 12184,
+      "target_positive_rows": 12184,
+      "theta_deg_range": [
+        0.050743521912279495,
+        39.27606665788966
+      ],
+      "rounded_unit_vectors": null,
+      "n_directions_rounded_6dp": 12184,
+      "directions_with_magnitude_span_gt_1e_4": 0,
+      "abs_p_range": [
+        0.4725750526005499,
+        4.99943635939511
+      ],
+      "p_vectors_and_counts": null,
+      "target_sum_mismatches": 0,
+      "section_sum_lower_among_mismatches": 0,
+      "max_abs_target_sum_residual": 1.519918441772461e-06,
+      "nonzero_outside_geometry": 0,
+      "exact_duplicate_rows": 0
+    },
+    "fhcal_data3.npz": {
+      "n": 20067,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        2212
+      ],
+      "section_shape": [
+        7,
+        5,
+        7
+      ],
+      "n_unique_vertices": 20067,
+      "n_unique_momenta": 20043,
+      "target_positive_rows": 20067,
+      "theta_deg_range": [
+        0.6302535148343049,
+        0.6302536365687311
+      ],
+      "rounded_unit_vectors": [
+        [
+          0.011,
+          0.0,
+          0.99994
+        ]
+      ],
+      "n_directions_rounded_6dp": 1,
+      "directions_with_magnitude_span_gt_1e_4": 1,
+      "abs_p_range": [
+        0.5466180338572126,
+        1.99998188044547
+      ],
+      "p_vectors_and_counts": null,
+      "target_sum_mismatches": 19396,
+      "section_sum_lower_among_mismatches": 19396,
+      "max_abs_target_sum_residual": 27.441218376159668,
+      "nonzero_outside_geometry": null,
+      "exact_duplicate_rows": 0
+    },
+    "fhcal_data_side_modules81619.zip": {
+      "n": 90000,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        2212
+      ],
+      "section_shape": [
+        7,
+        9,
+        10
+      ],
+      "n_unique_vertices": 88955,
+      "n_unique_momenta": 3,
+      "target_positive_rows": 90000,
+      "theta_deg_range": [
+        7.130253281002956,
+        11.969745879151306
+      ],
+      "rounded_unit_vectors": [
+        [
+          -0.207395,
+          0.0,
+          0.978257
+        ],
+        [
+          -0.115504,
+          0.145298,
+          0.982623
+        ],
+        [
+          0.124125,
+          0.0,
+          0.992267
+        ]
+      ],
+      "n_directions_rounded_6dp": 3,
+      "directions_with_magnitude_span_gt_1e_4": 0,
+      "abs_p_range": [
+        1.9999999819593364,
+        5.000000131950785
+      ],
+      "p_vectors_and_counts": [
+        [
+          [
+            -1.0369758605957031,
+            1.3357421057602658e-16,
+            4.891286373138428
+          ],
+          30000
+        ],
+        [
+          [
+            -0.23100826144218445,
+            0.2905963361263275,
+            1.965245246887207
+          ],
+          30000
+        ],
+        [
+          [
+            0.6206271648406982,
+            0.0,
+            4.96133279800415
+          ],
+          30000
+        ]
+      ],
+      "target_sum_mismatches": 8353,
+      "section_sum_lower_among_mismatches": 8353,
+      "max_abs_target_sum_residual": 11.067693412303925,
+      "nonzero_outside_geometry": 0,
+      "exact_duplicate_rows": 0
+    },
+    "fhcal_data_side_modules81619_180.zip": {
+      "n": 180000,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        2212
+      ],
+      "section_shape": [
+        7,
+        9,
+        10
+      ],
+      "n_unique_vertices": 178912,
+      "n_unique_momenta": 5,
+      "target_positive_rows": 180000,
+      "theta_deg_range": [
+        5.010253476715245,
+        11.969745879151306
+      ],
+      "rounded_unit_vectors": [
+        [
+          -0.207395,
+          0.0,
+          0.978257
+        ],
+        [
+          -0.205687,
+          0.0,
+          0.978618
+        ],
+        [
+          -0.031998,
+          0.146137,
+          0.988747
+        ],
+        [
+          0.087334,
+          0.0,
+          0.996179
+        ],
+        [
+          0.124125,
+          0.0,
+          0.992267
+        ]
+      ],
+      "n_directions_rounded_6dp": 5,
+      "directions_with_magnitude_span_gt_1e_4": 0,
+      "abs_p_range": [
+        5.000000023762357,
+        5.000000161328697
+      ],
+      "p_vectors_and_counts": [
+        [
+          [
+            -1.0369758605957031,
+            1.3357421057602658e-16,
+            4.891286373138428
+          ],
+          42305
+        ],
+        [
+          [
+            -1.0284373760223389,
+            1.325310365619237e-16,
+            4.8930888175964355
+          ],
+          17606
+        ],
+        [
+          [
+            -0.1599893569946289,
+            0.7306851744651794,
+            4.9437336921691895
+          ],
+          60000
+        ],
+        [
+          [
+            0.43667009472846985,
+            0.0,
+            4.980895519256592
+          ],
+          17695
+        ],
+        [
+          [
+            0.6206271648406982,
+            0.0,
+            4.96133279800415
+          ],
+          42394
+        ]
+      ],
+      "target_sum_mismatches": 0,
+      "section_sum_lower_among_mismatches": 0,
+      "max_abs_target_sum_residual": 2.3506581783294678e-06,
+      "nonzero_outside_geometry": 0,
+      "exact_duplicate_rows": 0
+    },
+    "fhcal_data_side_modules81619_new.zip": {
+      "n": 509943,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        2212
+      ],
+      "section_shape": [
+        7,
+        9,
+        10
+      ],
+      "n_unique_vertices": 501766,
+      "n_unique_momenta": 5,
+      "target_positive_rows": 509943,
+      "theta_deg_range": [
+        5.010253476715245,
+        11.969745879151306
+      ],
+      "rounded_unit_vectors": [
+        [
+          -0.207395,
+          0.0,
+          0.978257
+        ],
+        [
+          -0.205687,
+          0.0,
+          0.978618
+        ],
+        [
+          -0.031998,
+          0.146137,
+          0.988747
+        ],
+        [
+          0.087334,
+          0.0,
+          0.996179
+        ],
+        [
+          0.124125,
+          0.0,
+          0.992267
+        ]
+      ],
+      "n_directions_rounded_6dp": 5,
+      "directions_with_magnitude_span_gt_1e_4": 0,
+      "abs_p_range": [
+        5.000000023762357,
+        5.000000161328697
+      ],
+      "p_vectors_and_counts": [
+        [
+          [
+            -1.0369758605957031,
+            1.3357421057602658e-16,
+            4.891286373138428
+          ],
+          119991
+        ],
+        [
+          [
+            -1.0284373760223389,
+            1.325310365619237e-16,
+            4.8930888175964355
+          ],
+          49995
+        ],
+        [
+          [
+            -0.1599893569946289,
+            0.7306851744651794,
+            4.9437336921691895
+          ],
+          169965
+        ],
+        [
+          [
+            0.43667009472846985,
+            0.0,
+            4.980895519256592
+          ],
+          49999
+        ],
+        [
+          [
+            0.6206271648406982,
+            0.0,
+            4.96133279800415
+          ],
+          119993
+        ]
+      ],
+      "target_sum_mismatches": 0,
+      "section_sum_lower_among_mismatches": 0,
+      "max_abs_target_sum_residual": 2.384185791015625e-06,
+      "nonzero_outside_geometry": 0,
+      "exact_duplicate_rows": 0
+    },
+    "fhcal_train_90000.zip": {
+      "n": 90000,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        2212
+      ],
+      "section_shape": [
+        7,
+        9,
+        10
+      ],
+      "n_unique_vertices": 89757,
+      "n_unique_momenta": 5,
+      "target_positive_rows": 90000,
+      "theta_deg_range": [
+        5.010253476715245,
+        11.969745879151306
+      ],
+      "rounded_unit_vectors": [
+        [
+          -0.207395,
+          0.0,
+          0.978257
+        ],
+        [
+          -0.205687,
+          0.0,
+          0.978618
+        ],
+        [
+          -0.031998,
+          0.146137,
+          0.988747
+        ],
+        [
+          0.087334,
+          0.0,
+          0.996179
+        ],
+        [
+          0.124125,
+          0.0,
+          0.992267
+        ]
+      ],
+      "n_directions_rounded_6dp": 5,
+      "directions_with_magnitude_span_gt_1e_4": 0,
+      "abs_p_range": [
+        5.000000023762357,
+        5.000000161328697
+      ],
+      "p_vectors_and_counts": [
+        [
+          [
+            -1.0369758605957031,
+            1.3357421057602658e-16,
+            4.891286373138428
+          ],
+          21182
+        ],
+        [
+          [
+            -1.0284373760223389,
+            1.325310365619237e-16,
+            4.8930888175964355
+          ],
+          8854
+        ],
+        [
+          [
+            -0.1599893569946289,
+            0.7306851744651794,
+            4.9437336921691895
+          ],
+          30000
+        ],
+        [
+          [
+            0.43667009472846985,
+            0.0,
+            4.980895519256592
+          ],
+          8818
+        ],
+        [
+          [
+            0.6206271648406982,
+            0.0,
+            4.96133279800415
+          ],
+          21146
+        ]
+      ],
+      "target_sum_mismatches": 0,
+      "section_sum_lower_among_mismatches": 0,
+      "max_abs_target_sum_residual": 2.0712614059448242e-06,
+      "nonzero_outside_geometry": 0,
+      "exact_duplicate_rows": 0
+    },
+    "fhcal_data_muons_81619.zip": {
+      "n": 359997,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        -13
+      ],
+      "section_shape": [
+        7,
+        9,
+        10
+      ],
+      "n_unique_vertices": 338044,
+      "n_unique_momenta": 3,
+      "target_positive_rows": 359997,
+      "theta_deg_range": [
+        3.6302535785499916,
+        11.369746577294553
+      ],
+      "rounded_unit_vectors": [
+        [
+          -0.19714,
+          0.0,
+          0.980375
+        ],
+        [
+          -0.07167,
+          0.142935,
+          0.987134
+        ],
+        [
+          0.063317,
+          0.0,
+          0.997993
+        ]
+      ],
+      "n_directions_rounded_6dp": 3,
+      "directions_with_magnitude_span_gt_1e_4": 0,
+      "abs_p_range": [
+        4.999999897636169,
+        5.000000174723376
+      ],
+      "p_vectors_and_counts": [
+        [
+          [
+            -0.9856985211372375,
+            1.2730919755610915e-16,
+            4.901876926422119
+          ],
+          119999
+        ],
+        [
+          [
+            -0.35834944248199463,
+            0.714677095413208,
+            4.935668468475342
+          ],
+          120000
+        ],
+        [
+          [
+            0.3165874779224396,
+            0.0,
+            4.989967346191406
+          ],
+          119998
+        ]
+      ],
+      "target_sum_mismatches": 0,
+      "section_sum_lower_among_mismatches": 0,
+      "max_abs_target_sum_residual": 0.0,
+      "nonzero_outside_geometry": 0,
+      "exact_duplicate_rows": 0
+    },
+    "fhcal_data_muons_81619_large.zip": {
+      "n": 719992,
+      "fields": [
+        "EnergyDeposit",
+        "ParticleMomentum",
+        "ParticlePDG",
+        "ParticlePoint",
+        "TotalEnergySci"
+      ],
+      "pdg": [
+        -13
+      ],
+      "section_shape": [
+        7,
+        9,
+        10
+      ],
+      "n_unique_vertices": 641560,
+      "n_unique_momenta": 3,
+      "target_positive_rows": 719992,
+      "theta_deg_range": [
+        3.6302535785499916,
+        11.369746577294553
+      ],
+      "rounded_unit_vectors": [
+        [
+          -0.19714,
+          0.0,
+          0.980375
+        ],
+        [
+          -0.07167,
+          0.142935,
+          0.987134
+        ],
+        [
+          0.063317,
+          0.0,
+          0.997993
+        ]
+      ],
+      "n_directions_rounded_6dp": 3,
+      "directions_with_magnitude_span_gt_1e_4": 0,
+      "abs_p_range": [
+        4.999999897636169,
+        5.000000174723376
+      ],
+      "p_vectors_and_counts": [
+        [
+          [
+            -0.9856985211372375,
+            1.2730919755610915e-16,
+            4.901876926422119
+          ],
+          239997
+        ],
+        [
+          [
+            -0.35834944248199463,
+            0.714677095413208,
+            4.935668468475342
+          ],
+          239999
+        ],
+        [
+          [
+            0.3165874779224396,
+            0.0,
+            4.989967346191406
+          ],
+          239996
+        ]
+      ],
+      "target_sum_mismatches": 0,
+      "section_sum_lower_among_mismatches": 0,
+      "max_abs_target_sum_residual": 0.0,
+      "nonzero_outside_geometry": 0,
+      "exact_duplicate_rows": 35999
+    }
+  },
+  "common_distinct_full_rows": {
+    "fhcal_data.npz | fhcal_data_side_modules81619.zip": 0,
+    "fhcal_data.npz | fhcal_data_side_modules81619_180.zip": 0,
+    "fhcal_data.npz | fhcal_data_side_modules81619_new.zip": 0,
+    "fhcal_data.npz | fhcal_train_90000.zip": 0,
+    "fhcal_data.npz | fhcal_data_muons_81619.zip": 0,
+    "fhcal_data.npz | fhcal_data_muons_81619_large.zip": 0,
+    "fhcal_data_side_modules81619.zip | fhcal_data_side_modules81619_180.zip": 21014,
+    "fhcal_data_side_modules81619.zip | fhcal_data_side_modules81619_new.zip": 60000,
+    "fhcal_data_side_modules81619.zip | fhcal_train_90000.zip": 10549,
+    "fhcal_data_side_modules81619.zip | fhcal_data_muons_81619.zip": 0,
+    "fhcal_data_side_modules81619.zip | fhcal_data_muons_81619_large.zip": 0,
+    "fhcal_data_side_modules81619_180.zip | fhcal_data_side_modules81619_new.zip": 180000,
+    "fhcal_data_side_modules81619_180.zip | fhcal_train_90000.zip": 51251,
+    "fhcal_data_side_modules81619_180.zip | fhcal_data_muons_81619.zip": 0,
+    "fhcal_data_side_modules81619_180.zip | fhcal_data_muons_81619_large.zip": 0,
+    "fhcal_data_side_modules81619_new.zip | fhcal_train_90000.zip": 90000,
+    "fhcal_data_side_modules81619_new.zip | fhcal_data_muons_81619.zip": 0,
+    "fhcal_data_side_modules81619_new.zip | fhcal_data_muons_81619_large.zip": 0,
+    "fhcal_train_90000.zip | fhcal_data_muons_81619.zip": 0,
+    "fhcal_train_90000.zip | fhcal_data_muons_81619_large.zip": 0,
+    "fhcal_data_muons_81619.zip | fhcal_data_muons_81619_large.zip": 359997
+  },
+  "identity": "128-bit BLAKE2b of the full float64 section vector keyed by the hash of PDG, momentum, vertex and total; pairs compared only for matching section layouts.",
+  "prediction": {
+    "source": "fhcal_data.npz",
+    "n_train": 9138,
+    "n_holdout": 3046,
+    "seed": 20261123,
+    "split": "numpy.default_rng(seed).permutation(N); first floor(3*N/4) train, remainder holdout",
+    "split_sha256": {
+      "train": "1905113005cf22af72d74ed025af44af09344798c7cbdd6fca2dcf18b348f69b",
+      "holdout": "ca8d968314aff8c0abc48c3842e14fc083ad636b84e1d46dc952da79c22b0a1c"
+    },
+    "features": [
+      "px/|p|",
+      "py/|p|",
+      "ParticlePoint_x",
+      "ParticlePoint_y",
+      "ParticlePoint_z"
+    ],
+    "added_feature": "|p|",
+    "model": "HistGradientBoostingRegressor",
+    "fixed_hyperparameters": {
+      "loss": "absolute_error",
+      "learning_rate": 0.08,
+      "max_iter": 100,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 20261123
+    },
+    "mae_without_p": 5.90273422647903,
+    "mae_with_p": 3.238443150312677,
+    "mae_reduction": 2.664291076166354,
+    "paired_bootstrap_ci95": [
+      2.5157311623817162,
+      2.8197975341338144
+    ],
+    "bootstrap": "2000 paired holdout row resamples with both fitted models fixed; conditional on independent rows",
+    "training_p_quartile_edges": [
+      0.4725750526005499,
+      1.7815827806450169,
+      2.854470239261717,
+      3.9419886675278457,
+      4.99943635939511
+    ],
+    "training_theta_deg_quartile_edges": [
+      0.050743521912279495,
+      4.742833422527742,
+      9.461845539706601,
+      14.34902263207665,
+      39.27606665788966
+    ],
+    "heldout_p_by_theta_quartile_counts": [
+      [
+        182,
+        171,
+        174,
+        236
+      ],
+      [
+        210,
+        183,
+        189,
+        180
+      ],
+      [
+        190,
+        210,
+        200,
+        173
+      ],
+      [
+        191,
+        163,
+        195,
+        199
+      ]
+    ],
+    "heldout_by_training_p_quartile": [
+      {
+        "n": 763,
+        "mean_evis": 3.982597862903107,
+        "mae_without_p": 6.062878031888761,
+        "mae_with_p": 1.2685837603829957
+      },
+      {
+        "n": 762,
+        "mean_evis": 9.437335767632076,
+        "mae_without_p": 3.4885449407923694,
+        "mae_with_p": 2.6954263016628226
+      },
+      {
+        "n": 773,
+        "mean_evis": 14.237170650634582,
+        "mae_without_p": 5.255269088445316,
+        "mae_with_p": 3.939552380735862
+      },
+      {
+        "n": 748,
+        "mean_evis": 17.95124539371423,
+        "mae_without_p": 8.86785864341175,
+        "mae_with_p": 5.076443308160824
+      }
+    ],
+    "vertex_coordinate_quartiles": [
+      [
+        -1.357614278793335,
+        -3.1185789108276367,
+        -0.10691489279270172
+      ],
+      [
+        0.13191259279847145,
+        -0.6431629657745361,
+        -0.06407009437680244
+      ],
+      [
+        0.4337274134159088,
+        -0.16507550328969955,
+        -0.019439279101788998
+      ],
+      [
+        0.7485383450984955,
+        0.29947830736637115,
+        0.024250108748674393
+      ],
+      [
+        2.1562581062316895,
+        2.459184169769287,
+        0.06806652247905731
+      ]
+    ],
+    "overlap": {
+      "k": 64,
+      "scaling": "train IQR per baseline feature, Euclidean metric",
+      "p64_neighbour_radius_quantiles": [
+        0.41206561983784135,
+        0.6301583118080398,
+        0.74409544788042,
+        0.8888610312961903,
+        2.1296373385592857
+      ],
+      "fraction_queries_with_all_training_p_quartiles": 0.9983585029546946,
+      "local_p_iqr_quantiles": [
+        1.126366148321421,
+        1.856872958379998,
+        2.051801544931866,
+        2.2359454269867904,
+        3.1208670236492226
+      ]
+    },
+    "scope": "Predictive value for archived positive proton rows. ParticlePoint is the recorded vertex. Entry points, physical units, event IDs, primary count and generation weights are unverified. No causal interpretation or generator validation."
+  }
+}

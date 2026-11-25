@@ -1,0 +1,114 @@
+{
+  "muon": {
+    "input_sha256": {
+      "outputs/single_particle/muon_samples.npz": "d7fcdd34d8d70d650a1cb2109489fd5c3fa92d96b569fa2aa8e0c35527635777",
+      "outputs/conditional_shapes/muon_sections.npz": "a614e251a6430aa67389afd466e3de94db5865fe83c8a705f51e82e78db346cc",
+      "reports/single_particle/muon_flow/conditional_tail_flow.pt": "17dd139cd2332e6ff63917e87d6c9756f22e112bbee7d15ae38e30da645c1845",
+      "reports/single_particle/muon_flow.json": "dc0ef273cb075ba4c7ae2a69753a76ccf8efd7d568235e305b1a597fdd16cb47",
+      "reports/conditional_shapes/muon_reference.json": "338b96ed64f56c671c9c8412ad3a947340bcc7d987fd32d564d83ace46c4e7bd",
+      "reports/single_particle/muon_split.json": "1ee6c1636b19a5c8b1df64bd1e18ef1a75841b400028033e84e83d6862481ccf",
+      "reports/generated_total/PROTOCOL.md": "410426f8e35c653b476b6878c96dc9c8d3f9791f99a2e226b46610e18a8bf745",
+      "src/evaluate_generated_total.py": "61608b7f48e9ef5749026375cd06517e18660b0f86ba519913da24bed6996d18",
+      "src/conditional_shape_wgan.py": "cc2bdba68ecb538a1114c0d52e78ab02df2fd893f932f1ea74715efae8772af6",
+      "src/conditional_tail_flow.py": "b401492990b90b56d14642cf05f9673c35e5d2427ecbdae18e1125a12b1dd87a",
+      "src/evaluate_conditional_shapes.py": "4108e72d6a461be088967c50d22ff8222e84777e7e16018630321477c2e6b01a",
+      "src/analyze_gmm_packet_decoder.py": "fc70ffd29116866d9ca010d753d4da53bce816459444ed817941360f0dd5c1fc",
+      "reports/conditional_shapes/models/muon_direct_173.pt": "21bfa441a8ceb6716186b71b860c6fa75998dbf6350926990c232bda066c4ddf",
+      "reports/conditional_shapes/models/muon_direct_283.pt": "babd599096ffb759031f0367baea1565e493a9c2ccb4f2ecf57fb953def719ce",
+      "reports/conditional_shapes/models/muon_direct_397.pt": "8b0f4b6ed115babb1f125d5a73d0e696158171a282ab7c2d247a89033ab1a6aa",
+      "reports/conditional_shapes/models/muon_gmm_173.pt": "858e0cb48ffd34ededa72ccbaa7bbc0e7951cc1a3968bbe1615af9ffff328236",
+      "reports/conditional_shapes/models/muon_gmm_283.pt": "cf8a3010bdeaf3fce6e9104762c2d1a30640976c5f14b4cbb99c4f2cb6793924",
+      "reports/conditional_shapes/models/muon_gmm_397.pt": "f895cc730ad98c1e457b24015b725a8ac1c30583b9359e332af24f4e55b24fa1"
+    },
+    "total_sequence_sha256": "869a03c38ad7f3f09a43dd18fa37dd49dd1c62f3bc56fa097666f20a6d20f597",
+    "rows_per_direction": 4096,
+    "direction_vectors": [
+      [
+        0.3165874779224396,
+        0.0,
+        4.989967346191406
+      ],
+      [
+        -0.35834944248199463,
+        0.714677095413208,
+        4.935668468475342
+      ],
+      [
+        -0.9856985211372375,
+        1.2730919755610915e-16,
+        4.901876926422119
+      ]
+    ],
+    "shape_seeds": [
+      173,
+      283,
+      397
+    ],
+    "bootstrap_repeats": 400,
+    "bootstrap_seed": 241124,
+    "numpy": "2.4.4",
+    "torch": "2.9.1",
+    "python": "3.13.9"
+  },
+  "proton": {
+    "input_sha256": {
+      "outputs/single_particle/proton_samples.npz": "0cd821cb4800b5086e8a653dfed1083558896efaec90fb54c2ae668d80ee5807",
+      "outputs/conditional_shapes/proton_sections.npz": "c8926b8b6cfde5a4919cf88d808f656018fa6e3e9fb78f229651482c031ae61a",
+      "reports/single_particle/proton_flow/conditional_tail_flow.pt": "0baf05bf5506ee95aa8c23d78c32b9718eb1db8596b8d9307c9aa316697e53ba",
+      "reports/single_particle/proton_flow.json": "b7970871f4276bfde6136676ce7fc679a343a89e3703eb7787d0876e6695cb1b",
+      "reports/conditional_shapes/proton_reference.json": "666aa60ffb75158b2d0bcb3685a483fd55c291b15780cfa2bdf15fbf4fce751f",
+      "reports/single_particle/proton_split.json": "6e87a74af33ae91a6984ed2c58bfb25fd1446d167e8a726cba691e1ff1609080",
+      "reports/generated_total/PROTOCOL.md": "410426f8e35c653b476b6878c96dc9c8d3f9791f99a2e226b46610e18a8bf745",
+      "src/evaluate_generated_total.py": "61608b7f48e9ef5749026375cd06517e18660b0f86ba519913da24bed6996d18",
+      "src/conditional_shape_wgan.py": "cc2bdba68ecb538a1114c0d52e78ab02df2fd893f932f1ea74715efae8772af6",
+      "src/conditional_tail_flow.py": "b401492990b90b56d14642cf05f9673c35e5d2427ecbdae18e1125a12b1dd87a",
+      "src/evaluate_conditional_shapes.py": "4108e72d6a461be088967c50d22ff8222e84777e7e16018630321477c2e6b01a",
+      "src/analyze_gmm_packet_decoder.py": "fc70ffd29116866d9ca010d753d4da53bce816459444ed817941360f0dd5c1fc",
+      "reports/conditional_shapes/models/proton_direct_173.pt": "c99ac41b4180f313157e78d784c128d636f3bc18c482f12dffb81411eccb437b",
+      "reports/conditional_shapes/models/proton_direct_283.pt": "43e08dc0f71006a4a27248b9d0e6d34cc72eeae057b8b0bd961fec6c87ee95bf",
+      "reports/conditional_shapes/models/proton_direct_397.pt": "19586a15980eaa0e50c06e83fb1e30bc85084ffd714f3249bd05b16f8392784f",
+      "reports/conditional_shapes/models/proton_gmm_173.pt": "8b29647d80a35048af574305423d6930e3701427dbcb8fcd256767ed2f3615e9",
+      "reports/conditional_shapes/models/proton_gmm_283.pt": "32db1481494de60df4cb9043f68bf953fb1f21874cd2ce74a0b8c12b98481970",
+      "reports/conditional_shapes/models/proton_gmm_397.pt": "a153100a123322f647933166d52644122a6619bd794ee86dc621fa514cfee3d3"
+    },
+    "total_sequence_sha256": "bb2cf1d967a34be3f1d78cb906597c780b78fcde50faea44774728b19f0715a1",
+    "rows_per_direction": 4096,
+    "direction_vectors": [
+      [
+        -1.0369758605957031,
+        1.3357421057602658e-16,
+        4.891286373138428
+      ],
+      [
+        -1.0284373760223389,
+        1.325310365619237e-16,
+        4.8930888175964355
+      ],
+      [
+        -0.1599893569946289,
+        0.7306851744651794,
+        4.9437336921691895
+      ],
+      [
+        0.43667009472846985,
+        0.0,
+        4.980895519256592
+      ],
+      [
+        0.6206271648406982,
+        0.0,
+        4.96133279800415
+      ]
+    ],
+    "shape_seeds": [
+      173,
+      283,
+      397
+    ],
+    "bootstrap_repeats": 400,
+    "bootstrap_seed": 241124,
+    "numpy": "2.4.4",
+    "torch": "2.9.1",
+    "python": "3.13.9"
+  }
+}
